@@ -2,27 +2,13 @@ import React from "react";
 import Section from "./UI/Section";
 import Title from "../components/UI/Title";
 import { connect } from "react-redux";
-import styled from "styled-components";
-import Card from "./UI/Card";
-
-const List = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center;
-`;
+import List from "./UI/List";
 
 function Certificates ({certificates}) {
   return(
     <Section id="certificates">
       <Title>Сертификаты</Title>
-      <List>
-        {
-          certificates.map(certificate => {
-            return <Card key={certificate.id} {...certificate}/>
-          })
-        }
-      </List>
+      <List list={certificates}/>
     </Section>
   );
 }

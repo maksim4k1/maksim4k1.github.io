@@ -26,7 +26,7 @@ const ShortInfo = styled.div`
   display: flex;
   flex-flow: column;
   ${gap("10px")}
-  font-weight: 600;
+  font-weight: 500;
   text-align: end;
 `;
 const Image = styled.img`

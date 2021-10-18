@@ -5,9 +5,7 @@ import Title from "../components/UI/Title";
 function Portfolio () {
   return(
     <Section id="portfolio">
-      <div className="container">
-        <Title>Портфолио</Title>
-      </div>
+      <Title>Портфолио</Title>
     </Section>
   );
 }

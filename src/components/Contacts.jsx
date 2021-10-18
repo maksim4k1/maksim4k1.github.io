@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/GithubIcon";
 import InstagramIcon from "../assets/InstagramIcon";
+import PhoneIcon from "../assets/PhoneIcon";
 import TelegramIcon from "../assets/TelegramIcon";
 import WhatsappIcon from "../assets/WhatsappIcon";
 import { gap } from "../styles/mixins";
@@ -39,6 +40,7 @@ function Contacts () {
       <Title>Контакты</Title>
       <List>
         <li><a target="_blank" rel="noreferrer" href="https://t.me/maksim4k1"><TelegramIcon/></a></li>
+        <li><a href="tel:+996709395519"><PhoneIcon/></a></li>
         <li><a target="_blank" rel="noreferrer" href="https://wa.me/+996709395519"><WhatsappIcon/></a></li>
         <li><a target="_blank" rel="noreferrer" href="https://github.com/maksim4k1"><GithubIcon/></a></li>
         <li><a target="_blank" rel="noreferrer" href="https://instagram.com/_maksim4k1"><InstagramIcon/></a></li>

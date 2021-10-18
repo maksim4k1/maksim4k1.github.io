@@ -11,9 +11,6 @@ const HeaderElement = styled.header`
   background: var(--color-white);
   border-bottom: 1px solid var(--color-gray);
   z-index: 50;
-  @media screen and (max-width: 600px){
-    display: none;
-  }
 `;
 const Container = styled.div`
   height: 100%;

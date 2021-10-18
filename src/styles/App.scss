@@ -4,3 +4,8 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+.content{
+  & > section:nth-child(2n){
+    background-color: var(--color-bg-gray);
+  }
+}

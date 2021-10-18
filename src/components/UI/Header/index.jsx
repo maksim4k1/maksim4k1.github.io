@@ -1,12 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { gap } from "../../../styles/mixins";
 
 const HeaderElement = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 50px;
+  background: var(--color-white);
   border-bottom: 1px solid var(--color-gray);
+  z-index: 50;
   @media screen and (max-width: 600px){
     display: none;
   }
@@ -22,7 +26,7 @@ const Navigation = styled.nav`
   ${gap("20px")}
   justify-content: space-between;
 `;
-const Link = styled(NavLink)`
+const Link = styled.a`
   position: relative;
   color: var(--color-black);
   font-weight: 600;
@@ -52,11 +56,11 @@ function Header () {
     <HeaderElement>
       <Container className="container">
         <Navigation>
-          <Link to="/">Главная</Link>
-          <Link to="#about">Обо мне</Link>
-          <Link to="#certificates">Сертификаты</Link>
-          <Link to="#portfolio">Портфолио</Link>
-          <Link to="#contacts">Контакты</Link>
+          <Link href="/">Главная</Link>
+          <Link href="#about">Обо мне</Link>
+          <Link href="#certificates">Сертификаты</Link>
+          <Link href="#portfolio">Портфолио</Link>
+          <Link href="#contacts">Контакты</Link>
         </Navigation>
       </Container>
     </HeaderElement>

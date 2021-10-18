@@ -1,7 +1,8 @@
 import AppRoutes from './components/AppRoutes';
+import Header from './components/UI/Header';
 import Error404 from './pages/errors/Error404';
 import Main from './pages/Main';
-import './styles/App.css';
+import './styles/App.scss';
 
 const routes = [
   {path: "/", component: Main, exact: true},
@@ -11,6 +12,7 @@ const routes = [
 function App() {
   return (
     <div className="App">
+      <Header/>
       <AppRoutes routes={routes}/>
     </div>
   );

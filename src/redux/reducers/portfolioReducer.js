@@ -15,7 +15,7 @@ const initialState = [
   {id: 3, name: 'Веб-приложение "Список задач"', image: `${todolist}`, link: "https://maksim4k1.github.io/todolist/"},
   {id: 4, name: 'Веб-приложение "Загрузчик фотографий"', image: `${uploadimages}`, link: "https://maksim4k1.github.io/upload-images/"},
   {id: 5, name: 'Игра "Крестики-Нолики"', image: `${game}`, link: "https://maksim4k1.github.io/noughts-and-crosses/"},
-  {id: 6, name: 'Twitter', image: `${twitter}`, link: "https://maksim4k1.github.io/twitter/"},
+  {id: 6, name: 'Веб-приложение Twitter', image: `${twitter}`, link: "https://maksim4k1.github.io/twitter/"},
   {id: 7, name: 'Сайт портфолио "Lucas Montana"', image: `${lucasmontana}`, link: "https://maksim4k1.github.io/Lucas-Montana/"},
   {id: 8, name: 'Одностраничный сайт "TRANS LIGHT"', image: `${translight}`, link: "https://maksim4k1.github.io/TRANS-LIGHT/"},
 ];

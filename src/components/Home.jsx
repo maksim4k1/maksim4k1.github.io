@@ -22,8 +22,10 @@ const Title = styled.h1`
   &:first-letter{
     color: var(--color-coral);
   }
+  @media screen and (max-width: 540px){
+    font-size: 48px;
+  }
   @media screen and (max-width: 520px){
-    font-size: 42px;
     margin: 0 auto;
     text-align: center;
   }
@@ -58,9 +60,9 @@ function Home () {
       <Content>
         <Title>Максим<br/>Баженов</Title>
         <ShortInfo>
-          <p>Я начинающий<br/>Front-end разработчик</p>
-          <p>Мне 17 лет</p>
-          <p>Проживаю в Бишкеке</p>
+          <p>Я начинающий<br/><strong>Front-end</strong> разработчик</p>
+          <p>Мне <strong>17</strong> лет</p>
+          <p>И я проживаю в <strong>Бишкеке</strong></p>
         </ShortInfo>
         <Image src="https://i.stack.imgur.com/y9DpT.jpg"/>
       </Content>

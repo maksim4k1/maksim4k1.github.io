@@ -24,8 +24,10 @@ const List = styled.ul`
       fill: var(--color-black);
       transition: fill 0.3s;
     }
-    &:hover>g{
-      fill: var(--color-coral);
+    @media (hover){
+      &:hover>g{
+        fill: var(--color-coral);
+      }
     }
   }
 `;

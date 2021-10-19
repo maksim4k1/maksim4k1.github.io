@@ -35,6 +35,10 @@ body{
   color: var(--color-black);
   font-family: 'Montserrat', sans-serif;
 }
+strong{
+  color: var(--color-coral);
+  font-weight: 600;
+}
 
 /* Переменные */
 :root{

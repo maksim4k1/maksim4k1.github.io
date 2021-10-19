@@ -43,4 +43,5 @@ body{
   --color-gray: #D6D6D6;
   --color-coral: #00E98F;
   --color-bg-gray: #F1F1F1;
+  --color-modal-bg: rgba(0, 0, 0, 0.7);
 }

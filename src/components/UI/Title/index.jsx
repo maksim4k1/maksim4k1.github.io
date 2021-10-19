@@ -5,7 +5,6 @@ const TitleElement = styled.h2`
   padding: 0 0 0 80px;
   font-size: 32px;
   font-weight: 600;
-  text-transform: capitalize;
   &::before, &::after{
     content: "";
     position: absolute;

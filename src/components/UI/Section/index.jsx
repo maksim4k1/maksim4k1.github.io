@@ -12,9 +12,9 @@ const Container = styled.div`
   ${gap("30px")}
 `;
 
-function Section ({children, id}) {
+function Section ({children}) {
   return(
-    <SectionElement id={id}>
+    <SectionElement>
       <Container className="container">
         {children}
       </Container>

@@ -5,6 +5,7 @@
   padding: 0 10px;
 }
 .content{
+  margin-top: 30px;
   & > section:nth-child(2n){
     background-color: var(--color-bg-gray);
   }

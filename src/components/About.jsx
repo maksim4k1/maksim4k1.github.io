@@ -13,7 +13,7 @@ const Content = styled.div`
 
 function About () {
   return(
-    <Section id="about">
+    <Section>
       <Title>Обо мне</Title>
       <Content>
         <p>Здравствуйте, меня зовут <strong>Баженов Максим</strong> и <strong>мне 17 лет</strong>.</p>

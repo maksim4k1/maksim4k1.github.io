@@ -37,11 +37,11 @@ function MobileMenu ({isOpenMenu, closeMenu}) {
   return(
     <Menu style={isOpenMenu ? {top: 0} : {top: "-120vh"}} onClick={closeMenu}>
       <Navigation>
-        <AppLink href="/">Главная</AppLink>
-        <AppLink href="/#about">Обо мне</AppLink>
-        <AppLink href="/#certificates">Сертификаты</AppLink>
-        <AppLink href="/#portfolio">Портфолио</AppLink>
-        <AppLink href="/#contacts">Контакты</AppLink>
+        <AppLink type="navlink" to="/">Главная</AppLink>
+        <AppLink type="navlink" to="/about">Обо мне</AppLink>
+        <AppLink type="navlink" to="/certificates">Сертификаты</AppLink>
+        <AppLink type="navlink" to="/portfolio">Портфолио</AppLink>
+        <AppLink type="navlink" to="/contacts">Контакты</AppLink>
       </Navigation>
     </Menu>
   );

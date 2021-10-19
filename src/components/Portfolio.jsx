@@ -20,12 +20,12 @@ const Content = styled.div`
 
 function Portfolio ({projects, projectsWithApi}) {
   return(
-    <Section id="portfolio">
+    <Section>
       <Title>Портфолио</Title>
       <List list={projects}/>
       <Content>
         <p>Для корректной работы следующих приложений требуется скачать локальный API по этой ссылке: <AppLink href="https://github.com/an4morph/academy-fake-api" target="_blank" rel="noreferrer">https://github.com/an4morph/academy-fake-api</AppLink>.</p>
-        <p>Инструкция по скачиванию и запуску находится по этой же <AppLink href="https://github.com/an4morph/academy-fake-api" target="_blank" rel="noreferrer">ссылке</AppLink>.</p>
+        <p>Инструкция по скачиванию и запуску находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">ссылке</AppLink>.</p>
       </Content>
       <List list={projectsWithApi}/>
     </Section>

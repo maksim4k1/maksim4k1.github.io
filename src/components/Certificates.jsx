@@ -6,7 +6,7 @@ import List from "./UI/List";
 
 function Certificates ({certificates}) {
   return(
-    <Section id="certificates">
+    <Section>
       <Title>Сертификаты</Title>
       <List list={certificates}/>
     </Section>

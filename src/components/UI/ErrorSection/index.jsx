@@ -9,11 +9,18 @@ const Section = styled.section`
   ${gap("20px")}
   justify-content: center;
 `;
+const Container = styled.div`
+  display: flex;
+  flex-flow: column;
+  ${gap("30px")}
+`;
 
 function ErrorSection ({children}) {
   return(
     <Section className="container">
-      {children}
+      <Container className="container">
+        {children}
+      </Container>
     </Section>
   );
 }

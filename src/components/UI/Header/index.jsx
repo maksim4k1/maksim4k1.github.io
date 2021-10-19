@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { gap } from "../../../styles/mixins";
+import AppLink from "../AppLink";
 
 const HeaderElement = styled.header`
   position: fixed;
@@ -23,41 +24,17 @@ const Navigation = styled.nav`
   ${gap("20px")}
   justify-content: space-between;
 `;
-const Link = styled.a`
-  position: relative;
-  color: var(--color-black);
-  font-weight: 600;
-  transition: all 0.3s;
-  &::after{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-coral);
-    opacity: 0;
-    transition: all 0.3s;
-  }
-  &:hover{
-    color: var(--color-coral);
-    &::after{
-      bottom: 0;
-      opacity: 1;
-    }
-  }
-`;
 
 function Header () {
   return(
     <HeaderElement>
       <Container className="container">
         <Navigation>
-          <Link href="/">Главная</Link>
-          <Link href="#about">Обо мне</Link>
-          <Link href="#certificates">Сертификаты</Link>
-          <Link href="#portfolio">Портфолио</Link>
-          <Link href="#contacts">Контакты</Link>
+          <AppLink href="/">Главная</AppLink>
+          <AppLink href="/#about">Обо мне</AppLink>
+          <AppLink href="/#certificates">Сертификаты</AppLink>
+          <AppLink href="/#portfolio">Портфолио</AppLink>
+          <AppLink href="/#contacts">Контакты</AppLink>
         </Navigation>
       </Container>
     </HeaderElement>

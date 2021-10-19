@@ -13,7 +13,7 @@ import sweetbakery from "../../assets/webp/SweetBakery.webp";
 
 const initialState = {
   projects: [
-    {id: 0, name: 'Мой сайт портфолио', image: `${portfolio}`, link: "/"},
+    {id: 0, name: 'Мой сайт портфолио', image: `${portfolio}`, link: "https://maksim4k1.github.io/Maksim-Bazhenov/"},
     {id: 1, name: 'Одностраничный сайт автозапчастей "Авто Дом"', image: `${avtodom}`, link: "https://maksim4k1.github.io/avtodom-landing-page.kg/"},
     {id: 2, name: 'Погодное приложение', image: `${weather}`, link: "https://maksim4k1.github.io/Weather/"},
     {id: 3, name: 'Веб-приложение "Таймер"', image: `${timer}`, link: "https://maksim4k1.github.io/Timer/"},

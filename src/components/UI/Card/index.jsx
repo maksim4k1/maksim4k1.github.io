@@ -15,6 +15,7 @@ const Image = styled.img`
   object-fit: cover;
   object-position: center;
   background-color: var(--color-bg-gray);
+  border-radius: 10px;
 `;
 const Name = styled.h4`
   font-size: 18px;

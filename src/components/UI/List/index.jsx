@@ -5,7 +5,7 @@ import Card from "../Card";
 const ListElement = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   justify-content: center;
 `;
 

@@ -10,7 +10,7 @@ const CardElement = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   object-position: center;
   background-color: var(--color-bg-gray);

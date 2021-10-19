@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { gap } from "../styles/mixins";
 import Section from "./UI/Section";
+import myphoto from "../assets/png/me.jpeg";
 
 const Content = styled.div`
   display: flex;
@@ -47,7 +48,11 @@ const Image = styled.img`
   width: 100%;
   height: 300px;
   object-fit: cover;
+  object-position: center -80px;
   border-radius: 10px;
+  @media screen and (max-width: 550px){
+    object-position: top;
+  }
   @media screen and (max-width: 520px){
     max-width: 350px;
     margin: 0 auto
@@ -64,7 +69,7 @@ function Home () {
           <p>Мне <strong>17</strong> лет</p>
           <p>И я проживаю в <strong>Бишкеке</strong></p>
         </ShortInfo>
-        <Image src="https://i.stack.imgur.com/y9DpT.jpg"/>
+        <Image src={myphoto}/>
       </Content>
     </Section>
   );

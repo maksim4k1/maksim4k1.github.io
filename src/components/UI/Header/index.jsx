@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
-import MenuIcon from "../../../assets/MenuIcon";
+import MenuIcon from "../../../assets/icons/MenuIcon";
 import { openMenuAction } from "../../../redux/actions/menuActions";
 import { gap } from "../../../styles/mixins";
 import AppLink from "../AppLink";

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import GithubIcon from "../../../assets/GithubIcon";
-import InstagramIcon from "../../../assets/InstagramIcon";
-import PhoneIcon from "../../../assets/PhoneIcon";
-import TelegramIcon from "../../../assets/TelegramIcon";
-import WhatsappIcon from "../../../assets/WhatsappIcon";
+import GithubIcon from "../../../assets/icons/GithubIcon";
+import InstagramIcon from "../../../assets/icons/InstagramIcon";
+import PhoneIcon from "../../../assets/icons/PhoneIcon";
+import TelegramIcon from "../../../assets/icons/TelegramIcon";
+import WhatsappIcon from "../../../assets/icons/WhatsappIcon";
 import { gap } from "../../../styles/mixins";
 import Section from "../Section";
 

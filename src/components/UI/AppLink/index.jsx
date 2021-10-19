@@ -17,11 +17,13 @@ const Link = styled.a`
     opacity: 0;
     transition: all 0.3s;
   }
-  &:hover{
-    color: var(--color-coral);
-    &::after{
-      bottom: 0;
-      opacity: 1;
+  @media (hover){
+    &:hover{
+      color: var(--color-coral);
+      &::after{
+        bottom: 0;
+        opacity: 1;
+      }
     }
   }
 `;

@@ -22,6 +22,15 @@ const TitleElement = styled.h2`
     left: 30px;
     width: 40px;
   }
+  @media screen and (max-width: 400px){
+    font-size: 28px;
+    &::before{
+      top: 10px;
+    }
+    &::after{
+      bottom: 10px;
+    }
+  }
 `;
 
 function Title ({children}) {

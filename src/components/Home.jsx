@@ -10,11 +10,9 @@ const Content = styled.div`
   flex-flow: wrap;
   ${gap("30px")}
   @media screen and (max-width: 520px){
-    &{
-      flex-flow: column;
-      ${gap("20px")}
-      align-items: flex-start;
-    }
+    flex-flow: column;
+    ${gap("20px")}
+    align-items: flex-start;
   }
 `;
 const Title = styled.h1`
@@ -25,11 +23,9 @@ const Title = styled.h1`
     color: var(--color-coral);
   }
   @media screen and (max-width: 520px){
-    &{
-      font-size: 42px;
-      margin: 0 auto;
-      text-align: center;
-    }
+    font-size: 42px;
+    margin: 0 auto;
+    text-align: center;
   }
 `;
 const ShortInfo = styled.div`
@@ -39,12 +35,10 @@ const ShortInfo = styled.div`
   font-weight: 500;
   text-align: end;
   @media screen and (max-width: 520px){
-    &{
-      margin: 0 auto;
-      ${gap("5px")}
-      order: 1;
-      text-align: center;
-    }
+    margin: 0 auto;
+    ${gap("5px")}
+    order: 1;
+    text-align: center;
   }
 `;
 const Image = styled.img`
@@ -53,10 +47,8 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 10px;
   @media screen and (max-width: 520px){
-    &{
-      max-width: 350px;
-      margin: 0 auto
-    }
+    max-width: 350px;
+    margin: 0 auto
   }
 `;
 

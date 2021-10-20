@@ -39,7 +39,7 @@ function ContactsPage () {
           <Item><TelegramIcon/><AppLink target="_blank" rel="noreferrer" href="https://t.me/maksim4k1">maksim4k1</AppLink></Item>
           <Item><GithubIcon/><AppLink target="_blank" rel="noreferrer" href="https://github.com/maksim4k1">maksim4k1</AppLink></Item>
           <Item><InstagramIcon/><AppLink target="_blank" rel="noreferrer" href="https://instagram.com/_maksim4k1">_maksim4k1</AppLink></Item>
-          <Item><GmailIcon/>maksim4k1@gmail.com</Item>
+          <Item><GmailIcon/><AppLink href="mailto:maksim4k1@gmail.com">maksim4k1@gmail.com</AppLink></Item>
         </List>
       </Section>
     </main>

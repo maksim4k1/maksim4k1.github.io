@@ -1,3 +1,8 @@
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
 .container{
   width: 100%;
   max-width: 740px;

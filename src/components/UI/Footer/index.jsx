@@ -9,6 +9,7 @@ import { gap } from "../../../styles/mixins";
 import Section from "../Section";
 
 const FooterElement = styled.footer`
+  margin: auto 0 0;
   color: var(--color-white);
   background-color: var(--color-black);
 `;

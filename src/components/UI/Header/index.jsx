@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MenuIcon from "../../../assets/icons/MenuIcon";
 import { openMenuAction } from "../../../redux/actions/menuActions";
@@ -23,7 +24,20 @@ const Container = styled.div`
   align-items: center;
   @media screen and (max-width: 600px){
     &{
-      justify-content: flex-end;
+      justify-content: space-between;
+    }
+  }
+`;
+const Logo = styled(NavLink)`
+  color: var(--color-black);
+  font-size: 30px;
+  font-weight: 900;
+  &:first-letter{
+    color: var(--color-coral);
+  }
+  @media screen and (min-width: 600px){
+    &{
+      display: none;
     }
   }
 `;
@@ -57,6 +71,7 @@ function Header ({openMenu}) {
     <HeaderElement>
       <MobileMenu/>
       <Container className="container">
+        <Logo to="/">MB</Logo>
         <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
         <Navigation>
           <AppLink type="navlink" to="/">Главная</AppLink>

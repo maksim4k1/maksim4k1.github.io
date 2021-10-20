@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.76312abe.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.0a5d4372.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.0a5d4372.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.6fef7ebe.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.6fef7ebe.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
-    "static/js/2.f2fc5092.chunk.js": "/Maksim-Bazhenov/static/js/2.f2fc5092.chunk.js",
-    "static/js/2.f2fc5092.chunk.js.map": "/Maksim-Bazhenov/static/js/2.f2fc5092.chunk.js.map",
+    "static/js/2.3c2acd39.chunk.js": "/Maksim-Bazhenov/static/js/2.3c2acd39.chunk.js",
+    "static/js/2.3c2acd39.chunk.js.map": "/Maksim-Bazhenov/static/js/2.3c2acd39.chunk.js.map",
     "index.html": "/Maksim-Bazhenov/index.html",
     "static/css/main.76312abe.chunk.css.map": "/Maksim-Bazhenov/static/css/main.76312abe.chunk.css.map",
-    "static/js/2.f2fc5092.chunk.js.LICENSE.txt": "/Maksim-Bazhenov/static/js/2.f2fc5092.chunk.js.LICENSE.txt",
+    "static/js/2.3c2acd39.chunk.js.LICENSE.txt": "/Maksim-Bazhenov/static/js/2.3c2acd39.chunk.js.LICENSE.txt",
     "static/media/AvtoDom.caaf6885.webp": "/Maksim-Bazhenov/static/media/AvtoDom.caaf6885.webp",
     "static/media/Fisic.11cdd531.webp": "/Maksim-Bazhenov/static/media/Fisic.11cdd531.webp",
     "static/media/Game.cdb81cd1.webp": "/Maksim-Bazhenov/static/media/Game.cdb81cd1.webp",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e84a3add.js",
-    "static/js/2.f2fc5092.chunk.js",
+    "static/js/2.3c2acd39.chunk.js",
     "static/css/main.76312abe.chunk.css",
-    "static/js/main.0a5d4372.chunk.js"
+    "static/js/main.6fef7ebe.chunk.js"
   ]
 }

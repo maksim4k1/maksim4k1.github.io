@@ -18,16 +18,21 @@ const Content = styled.div`
   text-align: center;
 `;
 
-function Portfolio ({projects, projectsWithApi}) {
+function Portfolio ({projects, projectsWithApi, quizProject}) {
   return(
     <Section>
       <Title>Портфолио</Title>
       <List list={projects}/>
       <Content>
         <p>Для корректной работы следующих приложений требуется скачать локальный API по этой ссылке: <AppLink href="https://github.com/an4morph/academy-fake-api" target="_blank" rel="noreferrer">https://github.com/an4morph/academy-fake-api</AppLink>.</p>
-        <p>Инструкция по скачиванию и запуску находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">ссылке</AppLink>.</p>
+        <p>Инструкция запуску сервера находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
       </Content>
       <List list={projectsWithApi}/>
+      <Content>
+        <p>Для корректной работы следующего приложения требуется скачать локальный API по этой ссылке: <AppLink href="https://github.com/maksim4k1/Quiz-api" target="_blank" rel="noreferrer">https://github.com/maksim4k1/Quiz-api</AppLink>.</p>
+        <p>Инструкция запуску сервера находится по <AppLink href="https://github.com/maksim4k1/Quiz-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
+      </Content>
+      <List list={quizProject}/>
     </Section>
   );
 }
@@ -35,6 +40,7 @@ function Portfolio ({projects, projectsWithApi}) {
 const stateToProps = (state) => ({
   projects: state.portfolio.projects,
   projectsWithApi: state.portfolio.projectsWithApi,
+  quizProject: state.portfolio.quizProject,
 });
 
 export default connect(stateToProps)(Portfolio);

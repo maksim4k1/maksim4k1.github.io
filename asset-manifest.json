@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.76312abe.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.e0483b46.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.e0483b46.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.da539965.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.da539965.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.3c2acd39.chunk.js": "/Maksim-Bazhenov/static/js/2.3c2acd39.chunk.js",
@@ -25,12 +25,13 @@
     "static/media/UploadImages.cfaad4f3.webp": "/Maksim-Bazhenov/static/media/UploadImages.cfaad4f3.webp",
     "static/media/Weather.f02d6fbe.webp": "/Maksim-Bazhenov/static/media/Weather.f02d6fbe.webp",
     "static/media/me.bf0d355e.jpeg": "/Maksim-Bazhenov/static/media/me.bf0d355e.jpeg",
+    "static/media/quiz-app.4c7bcf79.webp": "/Maksim-Bazhenov/static/media/quiz-app.4c7bcf79.webp",
     "static/media/school.0a301e75.webp": "/Maksim-Bazhenov/static/media/school.0a301e75.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.3c2acd39.chunk.js",
     "static/css/main.76312abe.chunk.css",
-    "static/js/main.e0483b46.chunk.js"
+    "static/js/main.da539965.chunk.js"
   ]
 }

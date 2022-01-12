@@ -46,11 +46,12 @@ const ShortInfo = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
-  height: 300px;
+  height: 375px;
   object-fit: cover;
   object-position: center -80px;
   border-radius: 10px;
   @media screen and (max-width: 550px){
+    height: 300px;
     object-position: top;
   }
   @media screen and (max-width: 520px){
@@ -59,7 +60,7 @@ const Image = styled.img`
   }
 `;
 
-function Home () {
+function Home ({image}) {
   return(
     <Section>
       <Content>
@@ -69,7 +70,11 @@ function Home () {
           <p>Мне <strong>17</strong> лет</p>
           <p>И я проживаю в <strong>Бишкеке</strong></p>
         </ShortInfo>
-        <Image src={myphoto}/>
+        {
+          image
+          ? <Image src={myphoto}/>
+          : null
+        }
       </Content>
     </Section>
   );

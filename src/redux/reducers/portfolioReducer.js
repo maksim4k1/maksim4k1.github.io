@@ -11,6 +11,7 @@ import translight from "../../assets/webp/TransLight.webp";
 import ubereats from "../../assets/webp/UberEats.webp";
 import sweetbakery from "../../assets/webp/SweetBakery.webp";
 import quizApp from "../../assets/webp/quiz-app.webp";
+import educationApp from "../../assets/webp/EducationApp.webp";
 
 const initialState = {
   projects: [
@@ -28,6 +29,7 @@ const initialState = {
   projectsWithApi: [
     {id: 0, name: 'Приложение для просмотра меню в ресторанах "Uber Eats"', image: `${ubereats}`, link: "https://maksim4k1.github.io/UberEats/"},
     {id: 1, name: 'Мини интернет-магазин "Sweet Bakery"', image: `${sweetbakery}`, link: "https://maksim4k1.github.io/Sweet-Bakery/"},
+    {id: 2, name: 'Приложение для отслеживания успеваимости студентов"', image: `${educationApp}`, link: "https://maksim4k1.github.io/Education-App/"},
   ],
   quizProject: [
     {id: 0, name: 'Quiz - приложени онлайн викторин', image: `${quizApp}`, link: "https://maksim4k1.github.io/Quiz/"},

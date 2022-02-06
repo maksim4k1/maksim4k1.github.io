@@ -69,6 +69,9 @@ const FullScreenImage = styled.img`
   height: 100%;
   padding: 50px;
   object-fit: contain;
+  @media screen and (max-width: 600px){
+    padding: 20px;
+  }
 `;
 
 function Card ({name, image, link, type}) {

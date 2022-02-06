@@ -60,7 +60,9 @@ const OpenImageElement = styled.div`
   top: 0;
   left: 0;
   background: var(--color-modal-bg);
-  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 100;
+  transition: opacity 0.3s, visibility 0.3s;
 `;
 const FullScreenImage = styled.img`
   width: 100%;
@@ -90,7 +92,7 @@ function Card ({name, image, link, type}) {
           <CertificateImage onClick={onClickHandler}>
             <Image src={image} alt={name} />
           </CertificateImage>
-          <OpenImageElement onClick={onClickHandler} style={showImage ? {opacity: 1, zIndex: 100} : {opacity: 0, zIndex: 9}}>
+          <OpenImageElement onClick={onClickHandler} style={showImage ? {opacity: 1, visibility: "visible"} : {opacity: 0, visibility: "hidden"}}>
             <FullScreenImage src={image} alt={name}/>
           </OpenImageElement>
         </>

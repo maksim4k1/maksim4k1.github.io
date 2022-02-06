@@ -51,6 +51,9 @@ const Item = styled.li`
       margin: 0 0 0 75px;
       height: 5px;
     }
+    &:last-child{
+      margin-left: auto;
+    }
   }
   &:last-child{
     &::after{

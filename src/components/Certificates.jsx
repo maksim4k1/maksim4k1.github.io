@@ -8,7 +8,7 @@ function Certificates ({certificates}) {
   return(
     <Section>
       <Title>Сертификаты</Title>
-      <List list={certificates}/>
+      <List list={certificates} type="certificate" />
     </Section>
   );
 }

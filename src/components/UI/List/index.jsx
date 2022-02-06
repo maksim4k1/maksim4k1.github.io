@@ -18,12 +18,12 @@ const ListElement = styled.ul`
   }
 `;
 
-function List ({list}) {
+function List ({list, type}) {
   return(
     <ListElement>
       {
         list.map(item => {
-          return <Card key={item.id} {...item}/>
+          return <Card key={item.id} {...item} type={type}/>
         })
       }
     </ListElement>

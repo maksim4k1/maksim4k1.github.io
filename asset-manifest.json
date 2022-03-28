@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.76312abe.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.9e4ceb2a.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.9e4ceb2a.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.b2e83ad6.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.b2e83ad6.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.c937a912.chunk.js": "/Maksim-Bazhenov/static/js/2.c937a912.chunk.js",
@@ -29,12 +29,14 @@
     "static/media/certificate.1dd23898.webp": "/Maksim-Bazhenov/static/media/certificate.1dd23898.webp",
     "static/media/me.bf0d355e.jpeg": "/Maksim-Bazhenov/static/media/me.bf0d355e.jpeg",
     "static/media/quiz-app.4c7bcf79.webp": "/Maksim-Bazhenov/static/media/quiz-app.4c7bcf79.webp",
-    "static/media/school.0a301e75.webp": "/Maksim-Bazhenov/static/media/school.0a301e75.webp"
+    "static/media/school.0a301e75.webp": "/Maksim-Bazhenov/static/media/school.0a301e75.webp",
+    "static/media/sertificat_planeta_telecom_inf.52e49667.webp": "/Maksim-Bazhenov/static/media/sertificat_planeta_telecom_inf.52e49667.webp",
+    "static/media/sertificat_planeta_telecom_math.00749ebc.webp": "/Maksim-Bazhenov/static/media/sertificat_planeta_telecom_math.00749ebc.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.c937a912.chunk.js",
     "static/css/main.76312abe.chunk.css",
-    "static/js/main.9e4ceb2a.chunk.js"
+    "static/js/main.b2e83ad6.chunk.js"
   ]
 }

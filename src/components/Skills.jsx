@@ -76,16 +76,26 @@ const Subtitle = styled.h4`
 
 function Skills () {
   return(
-    <Section>
-      <Title>Skills</Title>
-      <List>
-        <Item><Subtitle>HTML</Subtitle></Item>
-        <Item><Subtitle>CSS</Subtitle></Item>
-        <Item><Subtitle>JavaScript</Subtitle></Item>
-        <Item><Subtitle>React</Subtitle></Item>
-        <Item><Subtitle>Redux</Subtitle></Item>
-      </List>
-    </Section>
+    <>
+      <Section>
+        <Title>Skills</Title>
+        <List>
+          <Item><Subtitle>HTML</Subtitle></Item>
+          <Item><Subtitle>CSS</Subtitle></Item>
+          <Item><Subtitle>JavaScript</Subtitle></Item>
+          <Item><Subtitle>React</Subtitle></Item>
+          <Item><Subtitle>Redux</Subtitle></Item>
+        </List>
+      </Section>
+      <Section>
+        <Title>Another skills</Title>
+        <List>
+          <Item><Subtitle>Git</Subtitle></Item>
+          <Item><Subtitle>Figma</Subtitle></Item>
+          <Item><Subtitle>Python</Subtitle></Item>
+        </List>
+      </Section>
+    </>
   );
 }
 

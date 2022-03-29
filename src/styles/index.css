@@ -1,4 +1,4 @@
-*{padding: 0; margin: 0; border: 0;}
+*{padding: 0; margin: 0; border: 0; transition: background-color 0.5s, border-color 0.5s;}
 
 *,*:before,*:after{
   -moz-box-sizing: border-box;
@@ -45,14 +45,27 @@ strong{
 }
 
 /* Variables */
-:root{
+body{
   --color-white: #FFFFFF;
   --color-black: #383838;
   --color-gray: #D6D6D6;
   --color-txt-gray: #606060;
   --color-coral: #00E98F;
   --color-bg-gray: #F1F1F1;
-  --color-modal-bg: rgba(0, 0, 0, 0.7);
+  --color-modal-bg: rgba(0, 0, 0, 0.8);
+  --color-header-white: #FFFFFF;
+  --color-footer-black: #383838;
+  --color-footer-white: #FFFFFF;
+  --color-modal-white: #FFFFFF;
+}
+body.dark{
+  --color-white: #1E1E1E;
+  --color-black: #DDDDDD;
+  --color-gray: #383838;
+  --color-txt-gray: #AAAAAA;
+  --color-bg-gray: #252525;
+  --color-header-white: #151515;
+  --color-footer-black: #151515;
 }
 
 /* Scrollbar */

@@ -34,7 +34,7 @@ const CertificateImage = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-modal-white);
     font-weight: 600;
     background: var(--color-modal-bg);
     opacity: 0;
@@ -46,6 +46,10 @@ const CertificateImage = styled.div`
       opacity: 1;
     }
   }
+`;
+const ProjectImage = styled.div`
+  border-radius: 10px;
+  overflow: hidden;
 `;
 const Name = styled.h4`
   font-size: 18px;
@@ -99,7 +103,9 @@ function Card ({name, image, link, type}) {
             <FullScreenImage src={image} alt={name}/>
           </OpenImageElement>
         </>
-        : <Image src={image} alt={name} />
+        : <ProjectImage>
+          <Image src={image} alt={name} />
+        </ProjectImage>
       }
       <Name><AppLink target="_blank" rel="noreferrer" href={link}>{name}</AppLink></Name>
     </CardElement>

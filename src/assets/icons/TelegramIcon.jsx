@@ -7,7 +7,7 @@ function TelegramIcon () {
     preserveAspectRatio="xMidYMid meet">
 
     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-    fill="#383838" stroke="none">
+    fill="var(--color-black)" stroke="none">
     <path d="M4575 4721 c-99 -33 -1102 -364 -2230 -736 -1127 -371 -2082 -686
     -2122 -701 -90 -32 -152 -86 -190 -162 -38 -77 -39 -193 -4 -262 29 -57 85
     -116 133 -141 20 -10 283 -127 584 -259 301 -132 548 -241 550 -243 2 -2 80

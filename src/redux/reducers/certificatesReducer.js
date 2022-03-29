@@ -5,6 +5,7 @@ import itAcademy from "../../assets/webp/ITAcademy.webp";
 import certificate from "../../assets/webp/certificate.webp";
 import telecom_inf from "../../assets/webp/sertificat_planeta_telecom_inf.webp";
 import telecom_math from "../../assets/webp/sertificat_planeta_telecom_math.webp";
+import certificate_skfu from "../../assets/webp/certificate_skfu.webp"
 
 const initialState = [
   {id: 0, name: "Сертификат об окончании курсов Front-End разработки", image: itAcademy, link: "https://drive.google.com/file/d/1x2T9gkuEGP8Lf1VDafFa46pgPFIzv1oh/view?usp=sharing"},
@@ -16,8 +17,9 @@ const initialState = [
   {id: 6, name: "Онлайн курс по CSS", image: "https://www.sololearn.com/certificates/course/en/20324776/1023/landscape/png", link: "https://www.sololearn.com/Certificate/1023-20324776/pdf/"},
   {id: 7, name: `НИЯУ МИФИ сертификат участника Семинара-практикума "Курс олимпиадной математики для школьников"`, image: math, link: "https://drive.google.com/file/d/1pWIURdJAmIHydgYEieqCB5sX0npaC-c5/view?usp=sharing"},
   {id: 8, name: "Школьная олимпиада по Информатике", image: school, link: "https://drive.google.com/file/d/1Q3j_Gi3kBYXC-WbKz6qCbiHAU5XWbt9t/view?usp=sharing"},
-  {id: 9, name: "Сертификат об участии в олимпиаде по информатике", image: telecom_inf, link: "https://drive.google.com/file/d/1ndn9i-JFAR4mgyf2UbQwNFJ0Ni2gt_O2/view?usp=sharing"},
-  {id: 10, name: "Сертификат об участии в олимпиаде по математике", image: telecom_math, link: "https://drive.google.com/file/d/1EWPoo9L0dC6IguqdHB5TB-BfYW9K7OCE/view?usp=sharing"},
+  {id: 9, name: "Сертификат участника курса по подготовке к сдаче экзамена по матиматике", image: certificate_skfu, link: "https://drive.google.com/file/d/1ZQ_CnP322STcrst4jVPrHX1AIowEmmKL/view?usp=sharing"},
+  {id: 10, name: "Сертификат об участии в олимпиаде по информатике", image: telecom_inf, link: "https://drive.google.com/file/d/1ndn9i-JFAR4mgyf2UbQwNFJ0Ni2gt_O2/view?usp=sharing"},
+  {id: 11, name: "Сертификат об участии в олимпиаде по математике", image: telecom_math, link: "https://drive.google.com/file/d/1EWPoo9L0dC6IguqdHB5TB-BfYW9K7OCE/view?usp=sharing"},
 ];
 
 const certificatesReducer = (state=initialState, {type}) => {

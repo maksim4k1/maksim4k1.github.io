@@ -104,7 +104,7 @@ function Header ({theme, openMenu, lightTheme, darkTheme}) {
     else darkTheme();
   }, [lightTheme, darkTheme, theme]);
 
-  function onClickHandler(event){
+  function themeHandler(event){
     event.target.style = `
       transform: rotate(360deg) scale(0);
     `;
@@ -126,7 +126,7 @@ function Header ({theme, openMenu, lightTheme, darkTheme}) {
         <LogoContainer>
           <Logo to="/">MB</Logo>
           <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
-          <ThemeButton onClick={onClickHandler}>{theme === "dark" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
+          <ThemeButton onClick={themeHandler}>{theme === "dark" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
         </LogoContainer>
         <Navigation>
           <AppLink type="navlink" to="/">Главная</AppLink>

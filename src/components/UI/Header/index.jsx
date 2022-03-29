@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
@@ -9,6 +9,7 @@ import { openMenuAction } from "../../../redux/actions/menuActions";
 import { gap } from "../../../styles/mixins";
 import AppLink from "../AppLink";
 import MobileMenu from "./MobileMenu";
+import { darkThemeAction, lightThemeAction } from "../../../redux/actions/themeActions";
 
 const HeaderElement = styled.header`
   position: fixed;
@@ -97,22 +98,21 @@ const Navigation = styled.nav`
   }
 `;
 
-function Header ({openMenu}) {
-  const [theme, setTheme] = useState(true);
+function Header ({theme, openMenu, lightTheme, darkTheme}) {
+  useEffect(() => {
+    if(theme === "light") lightTheme();
+    else darkTheme();
+  }, [lightTheme, darkTheme, theme]);
 
   function onClickHandler(event){
     event.target.style = `
       transform: rotate(360deg) scale(0);
     `;
 
-    if(theme){
-      document.body.classList.add("dark");
-    } else{
-      document.body.classList.remove("dark");
-    }
-
     setTimeout(() => {
-      setTheme(!theme);
+      if(theme === "light") darkTheme();
+      else lightTheme();
+
       event.target.style = `
         transform: rotate(0deg) scale(1);
       `;
@@ -126,7 +126,7 @@ function Header ({openMenu}) {
         <LogoContainer>
           <Logo to="/">MB</Logo>
           <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
-          <ThemeButton onClick={onClickHandler}>{theme ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
+          <ThemeButton onClick={onClickHandler}>{theme === "dark" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
         </LogoContainer>
         <Navigation>
           <AppLink type="navlink" to="/">Главная</AppLink>
@@ -140,8 +140,13 @@ function Header ({openMenu}) {
   );
 }
 
+const mapStateToProps = (state) => ({
+  theme: state.theme.theme
+});
 const mapDispatchToProps = {
   openMenu: openMenuAction,
+  lightTheme: lightThemeAction,
+  darkTheme: darkThemeAction,
 }
 
-export default connect(null, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

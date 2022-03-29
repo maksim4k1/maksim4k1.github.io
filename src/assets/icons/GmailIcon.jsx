@@ -7,7 +7,7 @@ function GmailIcon () {
     preserveAspectRatio="xMidYMid meet">
 
     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-    fill="#383838" stroke="none">
+    fill="var(--color-black)" stroke="none">
     <path d="M345 4496 c-84 -21 -147 -57 -211 -121 -65 -65 -105 -136 -123 -223
     -16 -76 -16 -3109 0 -3184 37 -172 175 -310 347 -347 75 -16 4328 -16 4404 0
     170 36 311 178 347 347 16 76 16 3110 0 3184 -37 172 -176 311 -347 347 -81

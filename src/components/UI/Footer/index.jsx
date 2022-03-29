@@ -11,8 +11,8 @@ import Section from "../Section";
 
 const FooterElement = styled.footer`
   margin: auto 0 0;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-footer-white);
+  background-color: var(--color-footer-black);
 `;
 const Title = styled.h2`
   font-size: 32px;
@@ -27,12 +27,12 @@ const List = styled.ul`
     width: 35px;
     height: 35px;
     &>g{
-      fill: var(--color-white);
+      fill: var(--color-footer-white);
       transition: fill 0.3s;
     }
     @media (hover){
       &:hover>g{
-        fill: var(--color-coral);
+        fill: var(--color-footer-coral);
       }
     }
   }
@@ -47,7 +47,7 @@ const Navigation = styled.nav`
   justify-content: center;
   ${gap("30px")}
   &>a{
-    color: var(--color-white);
+    color: var(--color-footer-white);
   }
   @media screen and (max-width: 600px){
     flex-flow: column;

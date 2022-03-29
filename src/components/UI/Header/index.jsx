@@ -16,7 +16,7 @@ const HeaderElement = styled.header`
   left: 0;
   width: 100%;
   height: 70px;
-  background: var(--color-white);
+  background: var(--color-header-white);
   border-bottom: 1px solid var(--color-gray);
   z-index: 50;
   @media screen and (max-width: 600px){
@@ -104,6 +104,12 @@ function Header ({openMenu}) {
     event.target.style = `
       transform: rotate(360deg) scale(0);
     `;
+
+    if(theme){
+      document.body.classList.add("dark");
+    } else{
+      document.body.classList.remove("dark");
+    }
 
     setTimeout(() => {
       setTheme(!theme);

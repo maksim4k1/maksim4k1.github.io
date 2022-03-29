@@ -29,7 +29,7 @@ const Navigation = styled.nav`
   align-items: center;
   font-size: 28px;
   &>a{
-    color: var(--color-white);
+    color: var(--color-modal-white);
   }
 `;
 

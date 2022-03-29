@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MenuIcon from "../../../assets/icons/MenuIcon";
+import SunIcon from "../../../assets/icons/SunIcon";
+import MoonIcon from "../../../assets/icons/MoonIcon";
 import { openMenuAction } from "../../../redux/actions/menuActions";
 import { gap } from "../../../styles/mixins";
 import AppLink from "../AppLink";
@@ -13,19 +15,33 @@ const HeaderElement = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 70px;
   background: var(--color-white);
   border-bottom: 1px solid var(--color-gray);
   z-index: 50;
+  @media screen and (max-width: 600px){
+    height: 50px;
+  }
 `;
 const Container = styled.div`
-  height: 100%;
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   @media screen and (max-width: 600px){
     &{
       justify-content: space-between;
     }
+  }
+`;
+const LogoContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+  @media screen and (max-width: 600px){
+    height: 50px;
   }
 `;
 const Logo = styled(NavLink)`
@@ -35,11 +51,6 @@ const Logo = styled(NavLink)`
   &:first-letter{
     color: var(--color-coral);
   }
-  @media screen and (min-width: 600px){
-    &{
-      display: none;
-    }
-  }
 `;
 const MenuButton = styled.button`
   width: 30px;
@@ -47,10 +58,30 @@ const MenuButton = styled.button`
   &>svg{
     width: 100%;
     height: 100%;
+    transition: 0.3s;
+    pointer-events: none;
   }
-  @media screen and (min-width: 600px){
+  @media screen and (min-width: 601px){
     &{
       display: none;
+    }
+  }
+  &:hover{
+    &>svg{
+      fill: var(--color-coral);
+    }
+  }
+`;
+const ThemeButton = styled(MenuButton)`
+  transition: 0.5s;
+  @media screen and (max-width: 600px){
+    &{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 601px){
+    &{
+      display: block;
     }
   }
 `;
@@ -67,12 +98,30 @@ const Navigation = styled.nav`
 `;
 
 function Header ({openMenu}) {
+  const [theme, setTheme] = useState(true);
+
+  function onClickHandler(event){
+    event.target.style = `
+      transform: rotate(360deg) scale(0);
+    `;
+
+    setTimeout(() => {
+      setTheme(!theme);
+      event.target.style = `
+        transform: rotate(0deg) scale(1);
+      `;
+    }, 500);
+  }
+
   return(
     <HeaderElement>
       <MobileMenu/>
       <Container className="container">
-        <Logo to="/">MB</Logo>
-        <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
+        <LogoContainer>
+          <Logo to="/">MB</Logo>
+          <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
+          <ThemeButton onClick={onClickHandler}>{theme ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
+        </LogoContainer>
         <Navigation>
           <AppLink type="navlink" to="/">Главная</AppLink>
           <AppLink type="navlink" to="/about">Обо мне</AppLink>

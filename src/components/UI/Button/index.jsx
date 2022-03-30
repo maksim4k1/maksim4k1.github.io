@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const ButtonElement = styled.button`
-  width: 230px;
+  min-width: 230px;
   height: 50px;
+  padding: 0 22px;
   display: flex;
   justify-content: center;
   align-items: center;

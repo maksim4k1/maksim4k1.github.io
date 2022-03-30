@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/icons/GithubIcon";
 import GmailIcon from "../assets/icons/GmailIcon";
@@ -39,6 +39,27 @@ const FormTitleElement = styled(FormTitle)`
 `;
 
 function ContactsPage () {
+  const [formData, setFormData] = useState({});
+  const [error, setError] = useState("");
+  const link = "https://wa.me/+996709395519?text=";
+  
+  function onChangeHandler(event) {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+    setError("");
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if(formData.username && formData.message){
+      window.open(link + `Здравствуйте, меня зовут ${formData.username}. ${formData.message}`);
+    } else{
+      setError("Заполните все поля!");
+    }
+  }
+
   return(
     <main className="content">
       <Section>
@@ -54,11 +75,11 @@ function ContactsPage () {
         </List>
       </Section>
       <Section bgImage={bgImage}>
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <FormTitleElement>Свяжитесь со мной!</FormTitleElement>
-          <Input placeholder="Ваше имя"/>
-          <TextArea placeholder="Текст сообщения"></TextArea>
-          <Button tyle="submit">Отправить</Button>
+          <Input onChange={onChangeHandler} placeholder="Ваше имя" name="username" value={formData.username || ""}/>
+          <TextArea onChange={onChangeHandler} placeholder="Текст сообщения" name="message" value={formData.message || ""}></TextArea>
+          <Button type="submit">{error ? error : "Отправить"}</Button>
         </Form>
       </Section>
     </main>

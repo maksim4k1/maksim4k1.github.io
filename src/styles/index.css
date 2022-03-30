@@ -61,6 +61,7 @@ body{
   --color-button-white: #FFFFFF;
   --color-button-black: #383838;
   --color-button-hover-black: #454545;
+  --color-red: #FF0000;
 }
 body.dark{
   --color-white: #1E1E1E;

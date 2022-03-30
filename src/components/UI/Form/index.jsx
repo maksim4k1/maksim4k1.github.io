@@ -14,11 +14,11 @@ const FormContainer = styled.div`
   margin: 0 auto
 `;
 
-function Form ({children}) {
+function Form (props) {
   return(
     <FormContainer>
-      <FormElement>
-        {children}
+      <FormElement {...props}>
+        {props.children}
       </FormElement>
     </FormContainer>
   );

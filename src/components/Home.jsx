@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { gap } from "../styles/mixins";
 import Section from "./UI/Section";
-import myphoto from "../assets/png/me.jpeg";
+import myphoto from "../assets/png/me.jpg";
 
 const Content = styled.div`
   display: flex;
@@ -44,19 +44,41 @@ const ShortInfo = styled.div`
     text-align: center;
   }
 `;
-const Image = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
   height: 375px;
-  object-fit: cover;
-  object-position: center -80px;
+  position: relative;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px var(--color-shadow-black) inset;
   @media screen and (max-width: 550px){
     height: 300px;
-    object-position: top;
   }
   @media screen and (max-width: 520px){
     max-width: 350px;
-    margin: 0 auto
+    margin: 0 auto;
+  }
+`;
+const BackgroundImage = styled.img`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  filter: blur(5px) brightness(70%);
+  z-index: -1;
+  @media screen and (max-width: 520px){
+    display: none;
+  }
+`;
+const Image = styled.img`
+  width: 100%;
+  height: 130%;
+  object-fit: contain;
+  object-position: top;
+  @media screen and (max-width: 520px){
+    object-fit: cover;
   }
 `;
 
@@ -72,7 +94,10 @@ function Home ({image}) {
         </ShortInfo>
         {
           image
-          ? <Image src={myphoto}/>
+          ? <ImageContainer>
+            <Image src={myphoto}/>
+            <BackgroundImage src={myphoto}/>
+          </ImageContainer>
           : null
         }
       </Content>

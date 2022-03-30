@@ -57,6 +57,7 @@ body{
   --color-footer-black: #383838;
   --color-footer-white: #FFFFFF;
   --color-modal-white: #FFFFFF;
+  --color-shadow-black: #383838;
 }
 body.dark{
   --color-white: #1E1E1E;

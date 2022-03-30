@@ -32,7 +32,7 @@ a, a:hover, a:visited{text-decoration: none;}
 ul, menu{list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 500;}
 
 body{
   background: var(--color-white);
@@ -58,15 +58,20 @@ body{
   --color-footer-white: #FFFFFF;
   --color-modal-white: #FFFFFF;
   --color-shadow-black: #383838;
+  --color-button-white: #FFFFFF;
+  --color-button-black: #383838;
+  --color-button-hover-black: #454545;
 }
 body.dark{
   --color-white: #1E1E1E;
-  --color-black: #DDDDDD;
+  --color-black: #FFFFFF;
   --color-gray: #383838;
   --color-txt-gray: #AAAAAA;
   --color-bg-gray: #252525;
   --color-header-white: #151515;
   --color-footer-black: #151515;
+  --color-button-black: #151515;
+  --color-button-hover-black: #202020;
 }
 
 /* Scrollbar */

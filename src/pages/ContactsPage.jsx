@@ -11,6 +11,12 @@ import AppLink from "../components/UI/AppLink";
 import Section from "../components/UI/Section";
 import Title from "../components/UI/Title";
 import { gap } from "../styles/mixins";
+import Form from "../components/UI/Form";
+import FormTitle from "../components/UI/Form/FormTitle";
+import Input from "../components/UI/Form/Input";
+import Button from "../components/UI/Button";
+import TextArea from "../components/UI/Form/TextArea";
+import bgImage from "../assets/gif/typing.gif";
 
 const List = styled.ul`
   display: flex;
@@ -28,6 +34,9 @@ const Item = styled.li`
     height: 30px;
   }
 `;
+const FormTitleElement = styled(FormTitle)`
+  color: var(--color-button-white);
+`;
 
 function ContactsPage () {
   return(
@@ -43,6 +52,14 @@ function ContactsPage () {
           <Item><InstagramIcon/><AppLink target="_blank" rel="noreferrer" href="https://instagram.com/_maksim4k1">_maksim4k1</AppLink></Item>
           <Item><GmailIcon/><AppLink href="mailto:maksim4k1@gmail.com">maksim4k1@gmail.com</AppLink></Item>
         </List>
+      </Section>
+      <Section bgImage={bgImage}>
+        <Form>
+          <FormTitleElement>Свяжитесь со мной!</FormTitleElement>
+          <Input placeholder="Ваше имя"/>
+          <TextArea placeholder="Текст сообщения"></TextArea>
+          <Button tyle="submit">Отправить</Button>
+        </Form>
       </Section>
     </main>
   );

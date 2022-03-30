@@ -8,14 +8,14 @@ const themeReducer = (state=initialState, {type}) => {
   switch(type){
     case LIGHT_THEME: {
       localStorage.setItem("theme", "light");
-      document.body.classList.add("dark");
+      document.body.classList.remove("dark");
       return {
         ...state,
         theme: "light"
       };
     } case DARK_THEME: {
       localStorage.setItem("theme", "dark");
-      document.body.classList.remove("dark");
+      document.body.classList.add("dark");
       return {
         ...state,
         theme: "dark"

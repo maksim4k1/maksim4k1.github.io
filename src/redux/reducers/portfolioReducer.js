@@ -15,24 +15,24 @@ import educationApp from "../../assets/webp/EducationApp.webp";
 
 const initialState = {
   projects: [
-    {id: 0, name: 'Мой сайт портфолио', image: `${portfolio}`, link: "https://maksim4k1.github.io/Maksim-Bazhenov/"},
+    {id: 0, name: 'Мой сайт-портфолио', image: `${portfolio}`, link: "https://maksim4k1.github.io/Maksim-Bazhenov/"},
     {id: 1, name: 'Одностраничный сайт автозапчастей "Авто Дом"', image: `${avtodom}`, link: "https://maksim4k1.github.io/avtodom-landing-page.kg/"},
     {id: 2, name: 'Погодное приложение', image: `${weather}`, link: "https://maksim4k1.github.io/Weather/"},
     {id: 3, name: 'Веб-приложение "Таймер"', image: `${timer}`, link: "https://maksim4k1.github.io/Timer/"},
     {id: 4, name: 'Веб-приложение "Список задач"', image: `${todolist}`, link: "https://maksim4k1.github.io/todolist/"},
     {id: 5, name: 'Веб-приложение "Загрузчик фотографий"', image: `${uploadimages}`, link: "https://maksim4k1.github.io/upload-images/"},
     {id: 6, name: 'Игра "Крестики-Нолики"', image: `${game}`, link: "https://maksim4k1.github.io/noughts-and-crosses/"},
-    {id: 7, name: 'Веб-приложение Twitter', image: `${twitter}`, link: "https://maksim4k1.github.io/twitter/"},
-    {id: 8, name: 'Сайт портфолио "Lucas Montana"', image: `${lucasmontana}`, link: "https://maksim4k1.github.io/Lucas-Montana/"},
+    {id: 7, name: 'Веб-приложение "Twitter"', image: `${twitter}`, link: "https://maksim4k1.github.io/twitter/"},
+    {id: 8, name: 'Сайт-портфолио "Lucas Montana"', image: `${lucasmontana}`, link: "https://maksim4k1.github.io/Lucas-Montana/"},
     {id: 9, name: 'Одностраничный сайт "TRANS LIGHT"', image: `${translight}`, link: "https://maksim4k1.github.io/TRANS-LIGHT/"},
   ],
   projectsWithApi: [
-    {id: 0, name: 'Приложение для просмотра меню в ресторанах "Uber Eats"', image: `${ubereats}`, link: "https://maksim4k1.github.io/UberEats/"},
+    {id: 0, name: 'Приложение "Uber Eats" для просмотра меню в ресторанах', image: `${ubereats}`, link: "https://maksim4k1.github.io/UberEats/"},
     {id: 1, name: 'Мини интернет-магазин "Sweet Bakery"', image: `${sweetbakery}`, link: "https://maksim4k1.github.io/Sweet-Bakery/"},
-    {id: 2, name: 'Приложение для отслеживания успеваимости студентов"', image: `${educationApp}`, link: "https://maksim4k1.github.io/Education-App/"},
+    {id: 2, name: 'Приложение для отслеживания успеваимости студентов', image: `${educationApp}`, link: "https://maksim4k1.github.io/Education-App/"},
   ],
   quizProject: [
-    {id: 0, name: 'Quiz - приложени онлайн викторин', image: `${quizApp}`, link: "https://maksim4k1.github.io/Quiz/"},
+    {id: 0, name: 'Quiz - приложение онлайн викторин', image: `${quizApp}`, link: "https://maksim4k1.github.io/Quiz/"},
   ],
 };
 

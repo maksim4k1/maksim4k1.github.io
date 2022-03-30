@@ -81,7 +81,7 @@ function MobileMenu ({theme, isOpenMenu, closeMenu, lightTheme, darkTheme}) {
     <Menu style={isOpenMenu ? {top: 0} : {top: "-120vh"}} onClick={closeMenu}>
       <Settings>
         <Logo to="/">MB</Logo>
-        <ThemeButton onClick={themeHandler}>{theme === "dark" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
+        <ThemeButton onClick={themeHandler}>{theme === "light" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
       </Settings>
       <Navigation>
         <AppLink type="navlink" to="/">Главная</AppLink>

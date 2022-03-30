@@ -126,7 +126,7 @@ function Header ({theme, openMenu, lightTheme, darkTheme}) {
         <LogoContainer>
           <Logo to="/">MB</Logo>
           <MenuButton onClick={openMenu}><MenuIcon/></MenuButton>
-          <ThemeButton onClick={themeHandler}>{theme === "dark" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
+          <ThemeButton onClick={themeHandler}>{theme === "light" ? <SunIcon/> : <MoonIcon/>}</ThemeButton>
         </LogoContainer>
         <Navigation>
           <AppLink type="navlink" to="/">Главная</AppLink>

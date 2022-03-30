@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/icons/GithubIcon";
 import GmailIcon from "../assets/icons/GmailIcon";
@@ -11,6 +11,12 @@ import AppLink from "../components/UI/AppLink";
 import Section from "../components/UI/Section";
 import Title from "../components/UI/Title";
 import { gap } from "../styles/mixins";
+import Form from "../components/UI/Form";
+import FormTitle from "../components/UI/Form/FormTitle";
+import Input from "../components/UI/Form/Input";
+import Button from "../components/UI/Button";
+import TextArea from "../components/UI/Form/TextArea";
+import bgImage from "../assets/gif/typing.gif";
 
 const List = styled.ul`
   display: flex;
@@ -28,8 +34,32 @@ const Item = styled.li`
     height: 30px;
   }
 `;
+const FormTitleElement = styled(FormTitle)`
+  color: var(--color-button-white);
+`;
 
 function ContactsPage () {
+  const [formData, setFormData] = useState({});
+  const [error, setError] = useState("");
+  const link = "https://wa.me/+996709395519?text=";
+  
+  function onChangeHandler(event) {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value
+    });
+    setError("");
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if(formData.username && formData.message){
+      window.open(link + `Здравствуйте, меня зовут ${formData.username}. ${formData.message}`);
+    } else{
+      setError("Заполните все поля!");
+    }
+  }
+
   return(
     <main className="content">
       <Section>
@@ -43,6 +73,14 @@ function ContactsPage () {
           <Item><InstagramIcon/><AppLink target="_blank" rel="noreferrer" href="https://instagram.com/_maksim4k1">_maksim4k1</AppLink></Item>
           <Item><GmailIcon/><AppLink href="mailto:maksim4k1@gmail.com">maksim4k1@gmail.com</AppLink></Item>
         </List>
+      </Section>
+      <Section bgImage={bgImage}>
+        <Form onSubmit={handleSubmit}>
+          <FormTitleElement>Свяжитесь со мной!</FormTitleElement>
+          <Input onChange={onChangeHandler} placeholder="Ваше имя" name="username" value={formData.username || ""}/>
+          <TextArea onChange={onChangeHandler} placeholder="Текст сообщения" name="message" value={formData.message || ""}></TextArea>
+          <Button type="submit">{error ? error : "Отправить"}</Button>
+        </Form>
       </Section>
     </main>
   );

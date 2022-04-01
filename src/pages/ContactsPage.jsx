@@ -54,7 +54,11 @@ function ContactsPage () {
     event.preventDefault();
 
     if(formData.username && formData.message){
-      window.open(link + `Здравствуйте, меня зовут ${formData.username}. ${formData.message}`);
+      window.open(link + `Здравствуйте, меня зовут ${formData.username}. ${formData.message.replace(/\n/g, " ")}`);
+      setFormData({
+        ...formData,
+        message: ""
+      });
     } else{
       setError("Заполните все поля!");
     }

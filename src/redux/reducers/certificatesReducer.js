@@ -10,6 +10,8 @@ import chto_gde_kogda from "../../assets/webp/chto_gde_kogda.webp";
 import math_olymp from "../../assets/webp/math_olymp.webp";
 import math_online_olymp from "../../assets/webp/math_online_olymp.webp";
 import active_school from "../../assets/webp/active_school.webp";
+import diplom_tusur_math from "../../assets/webp/diplom_tusur_math.webp";
+import diplom_tusur_inf from "../../assets/webp/diplom_tusur_inf.webp";
 
 const initialState = [
   {id: 0, name: "Сертификат об окончании курсов Front-End разработки", image: itAcademy, link: "https://drive.google.com/file/d/1x2T9gkuEGP8Lf1VDafFa46pgPFIzv1oh/view?usp=sharing"},
@@ -24,10 +26,12 @@ const initialState = [
   {id: 9, name: "Грамота за активное участие в жизни школы", image: active_school, link: "https://drive.google.com/file/d/18D9BvKxxjb8fUAmH1zrfrUGwFmabOMrR/view?usp=sharing"},
   {id: 10, name: "Сертификат об участии в олимпиаде по информатике", image: telecom_inf, link: "https://drive.google.com/file/d/1ndn9i-JFAR4mgyf2UbQwNFJ0Ni2gt_O2/view?usp=sharing"},
   {id: 11, name: "Сертификат об участии в олимпиаде по математике", image: telecom_math, link: "https://drive.google.com/file/d/1EWPoo9L0dC6IguqdHB5TB-BfYW9K7OCE/view?usp=sharing"},
-  {id: 12, name: "Почетная грамота за участие в финале республиканской математической олимпиады", image: math_olymp, link: "https://drive.google.com/file/d/1KONHkZ8hxHjlZFg71zjUqP8xCLqNhs6t/view?usp=sharing"},
-  {id: 13, name: "Диплом победителя I степени по математике", image: math_online_olymp, link: "https://drive.google.com/file/d/1zcUWj0kGCt5k7loBlvxCedCI1G0a4vis/view?usp=sharing"},
-  {id: 14, name: `Диплом I степени победителю интеллектуальной игры "Что? Где? Когда?"`, image: chto_gde_kogda, link: "https://drive.google.com/file/d/1tNEvts8qDvvOG-SpRpDfZYEiKKgBUST0/view?usp=sharing"},
-  {id: 15, name: "Сертификат участника курса по подготовке к сдаче экзамена по матиматике", image: certificate_skfu, link: "https://drive.google.com/file/d/1ZQ_CnP322STcrst4jVPrHX1AIowEmmKL/view?usp=sharing"},
+  {id: 12, name: "Диплом I степени. Открытая олимпиада по математике", image: diplom_tusur_math, link: "https://drive.google.com/file/d/1dzgd0cWoA7dBpG8u3zhA3fI0Hux6H99G/view?usp=sharing"},
+  {id: 13, name: "Диплом II степени. Открытая олимпиада по информатике", image: diplom_tusur_inf, link: "https://drive.google.com/file/d/1jPteiVmAnkB_MFz1Py-Ve4PjxngXxTg4/view?usp=sharing"},
+  {id: 14, name: "Почетная грамота за участие в финале республиканской математической олимпиады", image: math_olymp, link: "https://drive.google.com/file/d/1KONHkZ8hxHjlZFg71zjUqP8xCLqNhs6t/view?usp=sharing"},
+  {id: 15, name: "Диплом победителя I степени по математике", image: math_online_olymp, link: "https://drive.google.com/file/d/1zcUWj0kGCt5k7loBlvxCedCI1G0a4vis/view?usp=sharing"},
+  {id: 16, name: `Диплом I степени победителю интеллектуальной игры "Что? Где? Когда?"`, image: chto_gde_kogda, link: "https://drive.google.com/file/d/1tNEvts8qDvvOG-SpRpDfZYEiKKgBUST0/view?usp=sharing"},
+  {id: 17, name: "Сертификат участника курса по подготовке к сдаче экзамена по матиматике", image: certificate_skfu, link: "https://drive.google.com/file/d/1ZQ_CnP322STcrst4jVPrHX1AIowEmmKL/view?usp=sharing"},
 ];
 
 const certificatesReducer = (state=initialState, {type}) => {

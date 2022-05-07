@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.e817d28d.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.fd5abf0e.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.fd5abf0e.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.830c9f19.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.830c9f19.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.4a8c7447.chunk.js": "/Maksim-Bazhenov/static/js/2.4a8c7447.chunk.js",
@@ -30,6 +30,8 @@
     "static/media/certificate.1dd23898.webp": "/Maksim-Bazhenov/static/media/certificate.1dd23898.webp",
     "static/media/certificate_skfu.cf4bb6f0.webp": "/Maksim-Bazhenov/static/media/certificate_skfu.cf4bb6f0.webp",
     "static/media/chto_gde_kogda.d4d75a93.webp": "/Maksim-Bazhenov/static/media/chto_gde_kogda.d4d75a93.webp",
+    "static/media/diplom_tusur_inf.202b2204.webp": "/Maksim-Bazhenov/static/media/diplom_tusur_inf.202b2204.webp",
+    "static/media/diplom_tusur_math.c8b990c8.webp": "/Maksim-Bazhenov/static/media/diplom_tusur_math.c8b990c8.webp",
     "static/media/math_olymp.1ceebd56.webp": "/Maksim-Bazhenov/static/media/math_olymp.1ceebd56.webp",
     "static/media/math_online_olymp.c481fce3.webp": "/Maksim-Bazhenov/static/media/math_online_olymp.c481fce3.webp",
     "static/media/me.55d4060c.jpg": "/Maksim-Bazhenov/static/media/me.55d4060c.jpg",
@@ -43,6 +45,6 @@
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.4a8c7447.chunk.js",
     "static/css/main.e817d28d.chunk.css",
-    "static/js/main.fd5abf0e.chunk.js"
+    "static/js/main.830c9f19.chunk.js"
   ]
 }

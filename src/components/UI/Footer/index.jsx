@@ -32,7 +32,7 @@ const List = styled.ul`
     }
     @media (hover){
       &:hover>g{
-        fill: var(--color-footer-coral);
+        fill: var(--color-coral);
       }
     }
   }

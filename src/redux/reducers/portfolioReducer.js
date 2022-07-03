@@ -17,9 +17,9 @@ const initialState = {
   projects: [
     {id: 0, name: 'Мой сайт-портфолио', image: `${portfolio}`, link: "https://maksim4k1.github.io/Maksim-Bazhenov/"},
     {id: 1, name: 'Одностраничный сайт автозапчастей "Авто Дом"', image: `${avtodom}`, link: "https://maksim4k1.github.io/avtodom-landing-page.kg/"},
-    {id: 2, name: 'Погодное приложение', image: `${weather}`, link: "https://maksim4k1.github.io/Weather/"},
-    {id: 3, name: 'Веб-приложение "Таймер"', image: `${timer}`, link: "https://maksim4k1.github.io/Timer/"},
-    {id: 4, name: 'Веб-приложение "Список задач"', image: `${todolist}`, link: "https://maksim4k1.github.io/todolist/"},
+    {id: 2, name: 'Погодное приложение', image: `${weather}`, link: "https://maksim4k1.github.io/weather/"},
+    {id: 3, name: 'Веб-приложение "Список задач"', image: `${todolist}`, link: "https://maksim4k1.github.io/todolist/"},
+    {id: 4, name: 'Веб-приложение "Таймер"', image: `${timer}`, link: "https://maksim4k1.github.io/Timer/"},
     {id: 5, name: 'Веб-приложение "Загрузчик фотографий"', image: `${uploadimages}`, link: "https://maksim4k1.github.io/upload-images/"},
     {id: 6, name: 'Игра "Крестики-Нолики"', image: `${game}`, link: "https://maksim4k1.github.io/noughts-and-crosses/"},
     {id: 7, name: 'Веб-приложение "Twitter"', image: `${twitter}`, link: "https://maksim4k1.github.io/twitter/"},

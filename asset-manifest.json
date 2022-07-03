@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.e817d28d.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.8a730cd4.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.8a730cd4.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.e112381b.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.e112381b.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.4a8c7447.chunk.js": "/Maksim-Bazhenov/static/js/2.4a8c7447.chunk.js",
@@ -25,7 +25,7 @@
     "static/media/Twitter.713cc02c.webp": "/Maksim-Bazhenov/static/media/Twitter.713cc02c.webp",
     "static/media/UberEats.34c4bb2a.webp": "/Maksim-Bazhenov/static/media/UberEats.34c4bb2a.webp",
     "static/media/UploadImages.cfaad4f3.webp": "/Maksim-Bazhenov/static/media/UploadImages.cfaad4f3.webp",
-    "static/media/Weather.f02d6fbe.webp": "/Maksim-Bazhenov/static/media/Weather.f02d6fbe.webp",
+    "static/media/Weather.1d1e86ce.webp": "/Maksim-Bazhenov/static/media/Weather.1d1e86ce.webp",
     "static/media/active_school.dafd2826.webp": "/Maksim-Bazhenov/static/media/active_school.dafd2826.webp",
     "static/media/certificate.1dd23898.webp": "/Maksim-Bazhenov/static/media/certificate.1dd23898.webp",
     "static/media/certificate_skfu.cf4bb6f0.webp": "/Maksim-Bazhenov/static/media/certificate_skfu.cf4bb6f0.webp",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.4a8c7447.chunk.js",
     "static/css/main.e817d28d.chunk.css",
-    "static/js/main.8a730cd4.chunk.js"
+    "static/js/main.e112381b.chunk.js"
   ]
 }

@@ -16,7 +16,7 @@ function About () {
     <Section>
       <Title>Обо мне</Title>
       <Content>
-        <p>Здравствуйте, меня зовут <strong>Баженов Максим</strong> и <strong>мне 17 лет</strong>.</p>
+        <p>Здравствуйте, меня зовут <strong>Баженов Максим</strong> и <strong>мне 18 лет</strong>.</p>
         <p>Сейчас я обучаюсь <strong>в 11 классе</strong>, и увлекаюсь математикой и информатикой.</p>
         <p>В свободное время я <strong>занимаюсь программированием</strong>, в частности <strong>Front-end</strong> разработкой, так как в этом направлении присутствует всё, что мне нравится - <strong>информатика</strong>, <strong>математика</strong> и <strong>дизайн</strong>.<br/>Иногда учу и другие языки программирования, такие как <strong>Python</strong>.</p>
         <p>Я увлекаюсь программированием с лета 2020 года, и за это время успел попробовать несколько направлений, таких как <strong>разработка игр</strong>, <strong>Back-end</strong> разработка, разработка на <strong>Python</strong> и <strong>Front-end</strong> разработка. За полтора года изучения программирования я выучил языки программирования <strong>JavaScript</strong>, <strong>Python</strong>, <strong>HTML</strong> и <strong>CSS</strong>, а также фреймворк <strong>React JS</strong>.</p>

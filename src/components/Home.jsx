@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { gap } from "../styles/mixins";
 import Section from "./UI/Section";
 import myphoto from "../assets/png/me.jpg";
-
+/* Влад тут был */
 const Content = styled.div`
   display: flex;
   align-items: center;
@@ -74,9 +74,9 @@ const BackgroundImage = styled.img`
 `;
 const Image = styled.img`
   width: 100%;
-  height: 130%;
+  height: 180%;
   object-fit: contain;
-  object-position: top;
+  object-position: center -50px;
   @media screen and (max-width: 520px){
     object-fit: cover;
   }

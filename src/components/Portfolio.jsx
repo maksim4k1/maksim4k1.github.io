@@ -25,12 +25,12 @@ function Portfolio ({projects, projectsWithApi, quizProject}) {
       <List list={projects}/>
       <Content>
         <p>Для корректной работы следующих приложений требуется скачать локальный API по этой ссылке: <AppLink href="https://github.com/an4morph/academy-fake-api" target="_blank" rel="noreferrer">https://github.com/an4morph/academy-fake-api</AppLink>.</p>
-        <p>Инструкция запуску сервера находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
+        <p>Инструкция запуска сервера находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
       </Content>
       <List list={projectsWithApi}/>
       <Content>
         <p>Для корректной работы следующего приложения требуется скачать локальный API по этой ссылке: <AppLink href="https://github.com/maksim4k1/Quiz-api" target="_blank" rel="noreferrer">https://github.com/maksim4k1/Quiz-api</AppLink>.</p>
-        <p>Инструкция запуску сервера находится по <AppLink href="https://github.com/maksim4k1/Quiz-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
+        <p>Инструкция запуска сервера находится по <AppLink href="https://github.com/maksim4k1/Quiz-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
       </Content>
       <List list={quizProject}/>
     </Section>

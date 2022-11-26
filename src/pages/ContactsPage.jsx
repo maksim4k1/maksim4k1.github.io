@@ -41,7 +41,7 @@ const FormTitleElement = styled(FormTitle)`
 function ContactsPage () {
   const [formData, setFormData] = useState({});
   const [error, setError] = useState("");
-  const link = "https://wa.me/+996709395519?text=";
+  const link = "https://wa.me/+79836091358?text=";
   
   function onChangeHandler(event) {
     setFormData({
@@ -69,8 +69,8 @@ function ContactsPage () {
       <Section>
         <Title>Контакты</Title>
         <List>
-          <Item><PhoneIcon/><AppLink href="tel:+996709395519">+996 709 39-55-19</AppLink></Item>
-          <Item><WhatsappIcon/><AppLink target="_blank" rel="noreferrer" href="https://wa.me/+996709395519">+996 709 39-55-19</AppLink></Item>
+          <Item><PhoneIcon/><AppLink href="tel:+79836091358">+7 983 609-13-58</AppLink></Item>
+          <Item><WhatsappIcon/><AppLink target="_blank" rel="noreferrer" href="https://wa.me/+79836091358">+7 983 609-13-58</AppLink></Item>
           <Item><TelegramIcon/><AppLink target="_blank" rel="noreferrer" href="https://t.me/maksim4k1">maksim4k1</AppLink></Item>
           <Item><GithubIcon/><AppLink target="_blank" rel="noreferrer" href="https://github.com/maksim4k1">maksim4k1</AppLink></Item>
           <Item><VkIcon/><AppLink target="_blank" rel="noreferrer" href="https://vk.com/maks4k1">maks4k1</AppLink></Item>

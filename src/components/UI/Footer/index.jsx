@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../../../assets/icons/GithubIcon";
-import InstagramIcon from "../../../assets/icons/InstagramIcon";
+import VkIcon from "../../../assets/icons/VkIcon";
 import PhoneIcon from "../../../assets/icons/PhoneIcon";
 import TelegramIcon from "../../../assets/icons/TelegramIcon";
 import WhatsappIcon from "../../../assets/icons/WhatsappIcon";
@@ -26,6 +26,10 @@ const List = styled.ul`
   & svg{
     width: 35px;
     height: 35px;
+    &>path{
+      stroke: var(--color-footer-white);
+      transition: stroke 0.3s;
+    }
     &>g{
       fill: var(--color-footer-white);
       transition: fill 0.3s;
@@ -33,6 +37,9 @@ const List = styled.ul`
     @media (hover){
       &:hover>g{
         fill: var(--color-coral);
+      }
+      &:hover>path{
+        stroke: var(--color-coral);
       }
     }
   }
@@ -77,7 +84,7 @@ function Footer () {
           <li><a href="tel:+79836091358"><PhoneIcon/></a></li>
           <li><a target="_blank" rel="noreferrer" href="https://wa.me/+79836091358"><WhatsappIcon/></a></li>
           <li><a target="_blank" rel="noreferrer" href="https://github.com/maksim4k1"><GithubIcon/></a></li>
-          <li><a target="_blank" rel="noreferrer" href="https://instagram.com/_maksim4k1"><InstagramIcon/></a></li>
+          <li><a target="_blank" rel="noreferrer" href="https://vk.com/maks4k1"><VkIcon/></a></li>
         </List>
         <Content>Вы можете связаться со мной<br/>или посмотреть на мои работы<br/>по ссылкам выше</Content>
       </Section>

@@ -22,8 +22,9 @@ function List ({list, type}) {
   return(
     <ListElement>
       {
-        list.map(item => {
-          return <Card key={item.id} {...item} type={type}/>
+        list.map((item, index) => {
+          if(index === list.length - 1 && list.length % 2 === 1) return <Card key={item.id} {...item} type={type} width="full"/>
+          return <Card key={item.id} {...item} type={type} width="half"/>
         })
       }
     </ListElement>

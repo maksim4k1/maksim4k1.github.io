@@ -9,6 +9,18 @@ const CardElement = styled.div`
   display: flex;
   flex-flow: column;
   ${gap("10px")}
+  margin: 0 auto;
+  &.full-width{
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    &>div>img{
+      height: 280px;
+    }
+    &>h4{
+      text-align: center;
+    }
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -16,13 +28,14 @@ const Image = styled.img`
   object-fit: cover;
   object-position: center;
   background-color: var(--color-bg-gray);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-gray);
 `;
 const CertificateImage = styled.div`
   position: relative;
   width: 100%;
   height: min-content;
   border-radius: 10px;
-  overflow: hidden;
   cursor: pointer;
   &::after{
     content: "Открыть файл";
@@ -49,7 +62,6 @@ const CertificateImage = styled.div`
 `;
 const ProjectImage = styled.div`
   border-radius: 10px;
-  overflow: hidden;
 `;
 const Name = styled.h4`
   font-size: 18px;
@@ -78,7 +90,7 @@ const FullScreenImage = styled.img`
   }
 `;
 
-function Card ({name, image, link, type}) {
+function Card ({name, image, link, type, width}) {
   const [showImage, setShowImage] = useState(false);
 
   function onClickHandler() {
@@ -92,7 +104,7 @@ function Card ({name, image, link, type}) {
   }
   
   return(
-    <CardElement>
+    <CardElement className={width === "full" ? "full-width" : null}>
       {
         type === "certificate"
         ? <>

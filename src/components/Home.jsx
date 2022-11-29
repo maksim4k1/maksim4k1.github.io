@@ -90,7 +90,7 @@ function Home ({image}) {
         <ShortInfo>
           <p>Я начинающий<br/><strong>Front-end</strong> разработчик</p>
           <p>Мне <strong>18</strong> лет</p>
-          <p>И я проживаю в <strong>Бишкеке</strong></p>
+          <p>И я проживаю в <strong>Томске</strong></p>
         </ShortInfo>
         {
           image

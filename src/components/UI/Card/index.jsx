@@ -14,7 +14,7 @@ const CardElement = styled.div`
     width: 80%;
     grid-column-start: 1;
     grid-column-end: 3;
-    &>div>img{
+    &>div:first-child>img{
       height: 280px;
     }
     &>h4{
@@ -50,6 +50,7 @@ const CertificateImage = styled.div`
     color: var(--color-modal-white);
     font-weight: 600;
     background: var(--color-modal-bg);
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.5s;
     z-index: 10;

@@ -8,18 +8,24 @@ const CardElement = styled.div`
   width: 100%;
   display: flex;
   flex-flow: column;
+  margin: 0 auto 0 0;
   ${gap("10px")}
-  margin: 0 auto;
-  &.full-width{
-    width: 80%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    &>div:first-child>img{
-      height: 280px;
-    }
-    &>h4{
-      text-align: center;
-    }
+  @media screen and (min-width: 650px){
+    &.full-width{
+      width: 80%;
+      margin: 0 auto;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      &>div:first-child>img{
+        height: 280px;
+      }
+      &>h4{
+        text-align: center;
+      }
+    } 
+  }
+  &.position-center{
+    margin: 0 auto;
   }
 `;
 const Image = styled.img`
@@ -91,7 +97,7 @@ const FullScreenImage = styled.img`
   }
 `;
 
-function Card ({name, image, link, type, width}) {
+function Card ({name, image, link, type, width, position}) {
   const [showImage, setShowImage] = useState(false);
 
   function onClickHandler() {
@@ -105,7 +111,7 @@ function Card ({name, image, link, type, width}) {
   }
   
   return(
-    <CardElement className={width === "full" ? "full-width" : null}>
+    <CardElement className={width === "full" && position === "center" ? "full-width position-center" : width === "full" ? "full-width" : position === "center" ? "position-center" : null}>
       {
         type === "certificate"
         ? <>

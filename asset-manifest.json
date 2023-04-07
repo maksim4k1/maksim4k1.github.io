@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.e817d28d.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.fe0d7001.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.fe0d7001.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.ad6f3242.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.ad6f3242.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.c533d65b.chunk.js": "/Maksim-Bazhenov/static/js/2.c533d65b.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.c533d65b.chunk.js",
     "static/css/main.e817d28d.chunk.css",
-    "static/js/main.fe0d7001.chunk.js"
+    "static/js/main.ad6f3242.chunk.js"
   ]
 }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { gap } from "../styles/mixins";
 import Section from "./UI/Section";
 import myphoto from "../assets/png/me.jpg";
+import now_age from "../utils/now_age";
 /* Влад тут был */
 const Content = styled.div`
   display: flex;
@@ -89,7 +90,7 @@ function Home ({image}) {
         <Title>Максим<br/>Баженов</Title>
         <ShortInfo>
           <p>Я начинающий<br/><strong>Front-end</strong> разработчик</p>
-          <p>Мне <strong>18</strong> лет</p>
+          <p>Мне <strong>{now_age()}</strong> лет</p>
           <p>И я проживаю в <strong>Томске</strong></p>
         </ShortInfo>
         {

@@ -12,6 +12,7 @@ import ubereats from "../../assets/webp/UberEats.webp";
 import sweetbakery from "../../assets/webp/SweetBakery.webp";
 import quizApp from "../../assets/webp/quiz-app.webp";
 import educationApp from "../../assets/webp/EducationApp.webp";
+import multiTaskerApp from "../../assets/webp/MultiTasker.webp";
 
 const initialState = {
   projects: [
@@ -33,6 +34,9 @@ const initialState = {
   ],
   quizProject: [
     {id: 0, name: 'Quiz - приложение онлайн викторин', image: `${quizApp}`, link: "https://maksim4k1.github.io/Quiz/"},
+  ],
+  multiTaskerProject: [
+    {id: 0, name: 'MULTI-TASKER - приложение для отслеживания задач', image: `${multiTaskerApp}`, link: "https://maksim4k1.github.io/multi-tasker-app/"},
   ],
 };
 

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Maksim-Bazhenov/static/css/main.e817d28d.chunk.css",
-    "main.js": "/Maksim-Bazhenov/static/js/main.ad6f3242.chunk.js",
-    "main.js.map": "/Maksim-Bazhenov/static/js/main.ad6f3242.chunk.js.map",
+    "main.js": "/Maksim-Bazhenov/static/js/main.b71e174d.chunk.js",
+    "main.js.map": "/Maksim-Bazhenov/static/js/main.b71e174d.chunk.js.map",
     "runtime-main.js": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js",
     "runtime-main.js.map": "/Maksim-Bazhenov/static/js/runtime-main.e84a3add.js.map",
     "static/js/2.c533d65b.chunk.js": "/Maksim-Bazhenov/static/js/2.c533d65b.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Game.cdb81cd1.webp": "/Maksim-Bazhenov/static/media/Game.cdb81cd1.webp",
     "static/media/ITAcademy.b4576515.webp": "/Maksim-Bazhenov/static/media/ITAcademy.b4576515.webp",
     "static/media/LucasMontana.21d3ebde.webp": "/Maksim-Bazhenov/static/media/LucasMontana.21d3ebde.webp",
+    "static/media/MultiTasker.dde27447.webp": "/Maksim-Bazhenov/static/media/MultiTasker.dde27447.webp",
     "static/media/Portfolio.2d15c734.webp": "/Maksim-Bazhenov/static/media/Portfolio.2d15c734.webp",
     "static/media/SweetBakery.1c43660a.webp": "/Maksim-Bazhenov/static/media/SweetBakery.1c43660a.webp",
     "static/media/Timer.c8a75593.webp": "/Maksim-Bazhenov/static/media/Timer.c8a75593.webp",
@@ -32,6 +33,6 @@
     "static/js/runtime-main.e84a3add.js",
     "static/js/2.c533d65b.chunk.js",
     "static/css/main.e817d28d.chunk.css",
-    "static/js/main.ad6f3242.chunk.js"
+    "static/js/main.b71e174d.chunk.js"
   ]
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../../../assets/icons/GithubIcon";
-import VkIcon from "../../../assets/icons/VkIcon";
-import PhoneIcon from "../../../assets/icons/PhoneIcon";
 import TelegramIcon from "../../../assets/icons/TelegramIcon";
 import WhatsappIcon from "../../../assets/icons/WhatsappIcon";
 import { gap } from "../../../styles/mixins";
@@ -81,10 +79,8 @@ function Footer () {
         <Title>Контакты</Title>
         <List>
           <li><a target="_blank" rel="noreferrer" href="https://t.me/maksim4k1"><TelegramIcon/></a></li>
-          <li><a href="tel:+79836091358"><PhoneIcon/></a></li>
           <li><a target="_blank" rel="noreferrer" href="https://wa.me/+79836091358"><WhatsappIcon/></a></li>
           <li><a target="_blank" rel="noreferrer" href="https://github.com/maksim4k1"><GithubIcon/></a></li>
-          <li><a target="_blank" rel="noreferrer" href="https://vk.com/maks4k1"><VkIcon/></a></li>
         </List>
         <Content>Вы можете связаться со мной<br/>или посмотреть на мои работы<br/>по ссылкам выше</Content>
       </Section>

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.3d81950a.chunk.css",
-    "main.js": "/static/js/main.f237aa46.chunk.js",
-    "main.js.map": "/static/js/main.f237aa46.chunk.js.map",
+    "main.js": "/static/js/main.84396003.chunk.js",
+    "main.js.map": "/static/js/main.84396003.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.479c8b1d.js",
     "runtime-main.js.map": "/static/js/runtime-main.479c8b1d.js.map",
-    "static/js/2.da104fe9.chunk.js": "/static/js/2.da104fe9.chunk.js",
-    "static/js/2.da104fe9.chunk.js.map": "/static/js/2.da104fe9.chunk.js.map",
+    "static/js/2.00233f33.chunk.js": "/static/js/2.00233f33.chunk.js",
+    "static/js/2.00233f33.chunk.js.map": "/static/js/2.00233f33.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.3d81950a.chunk.css.map": "/static/css/main.3d81950a.chunk.css.map",
-    "static/js/2.da104fe9.chunk.js.LICENSE.txt": "/static/js/2.da104fe9.chunk.js.LICENSE.txt",
+    "static/js/2.00233f33.chunk.js.LICENSE.txt": "/static/js/2.00233f33.chunk.js.LICENSE.txt",
     "static/media/AvtoDom.caaf6885.webp": "/static/media/AvtoDom.caaf6885.webp",
     "static/media/EducationApp.df79c6cf.webp": "/static/media/EducationApp.df79c6cf.webp",
     "static/media/Game.cdb81cd1.webp": "/static/media/Game.cdb81cd1.webp",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.479c8b1d.js",
-    "static/js/2.da104fe9.chunk.js",
+    "static/js/2.00233f33.chunk.js",
     "static/css/main.3d81950a.chunk.css",
-    "static/js/main.f237aa46.chunk.js"
+    "static/js/main.84396003.chunk.js"
   ]
 }

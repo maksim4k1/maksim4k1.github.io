@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../../../assets/icons/GithubIcon";
+import GitlabIcon from "../../../assets/icons/GitlabIcon";
 import TelegramIcon from "../../../assets/icons/TelegramIcon";
 import WhatsappIcon from "../../../assets/icons/WhatsappIcon";
 import { gap } from "../../../styles/mixins";
@@ -22,8 +23,10 @@ const List = styled.ul`
   ${gap("30px")}
   justify-content: center;
   & svg{
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    min-height: 35px;
+    max-height: 35px;
     &>path{
       stroke: var(--color-footer-white);
       transition: stroke 0.3s;
@@ -64,6 +67,13 @@ const Navigation = styled.nav`
     order: 1
   }
 `;
+const GitLabListItem = styled.li`
+  & path{
+    stroke-width: 0;
+    fill: var(--color-footer-white);
+    transition: stroke 0.3s;
+  }
+`;
 
 function Footer () {
   return(
@@ -80,6 +90,7 @@ function Footer () {
         <List>
           <li><a target="_blank" rel="noreferrer" href="https://t.me/maksim4k1"><TelegramIcon/></a></li>
           <li><a target="_blank" rel="noreferrer" href="https://wa.me/+79836091358"><WhatsappIcon/></a></li>
+          <GitLabListItem><a target="_blank" rel="noreferrer" href="https://gitlab.com/maksim4k1"><GitlabIcon/></a></GitLabListItem>
           <li><a target="_blank" rel="noreferrer" href="https://github.com/maksim4k1"><GithubIcon/></a></li>
         </List>
         <Content>Вы можете связаться со мной<br/>или посмотреть на мои работы<br/>по ссылкам выше</Content>

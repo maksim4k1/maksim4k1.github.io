@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/icons/GithubIcon";
+import GitlabIcon from "../assets/icons/GitlabIcon";
 import GmailIcon from "../assets/icons/GmailIcon";
 import TelegramIcon from "../assets/icons/TelegramIcon";
 import WhatsappIcon from "../assets/icons/WhatsappIcon";
@@ -68,6 +69,7 @@ function ContactsPage () {
         <List>
           <Item><WhatsappIcon/><AppLink target="_blank" rel="noreferrer" href="https://wa.me/+79836091358">+7 983 609-13-58</AppLink></Item>
           <Item><TelegramIcon/><AppLink target="_blank" rel="noreferrer" href="https://t.me/maksim4k1">maksim4k1</AppLink></Item>
+          <Item><GitlabIcon/><AppLink target="_blank" rel="noreferrer" href="https://gitlab.com/maksim4k1">maksim4k1</AppLink></Item>
           <Item><GithubIcon/><AppLink target="_blank" rel="noreferrer" href="https://github.com/maksim4k1">maksim4k1</AppLink></Item>
           <Item><GmailIcon/><AppLink href="mailto:maksim4k1@gmail.com">maksim4k1@gmail.com</AppLink></Item>
         </List>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import GithubIcon from "../../../assets/icons/GithubIcon";
 import GitlabIcon from "../../../assets/icons/GitlabIcon";
 import TelegramIcon from "../../../assets/icons/TelegramIcon";
-import WhatsappIcon from "../../../assets/icons/WhatsappIcon";
 import { gap } from "../../../styles/mixins";
 import AppLink from "../AppLink";
 import Section from "../Section";
@@ -29,11 +28,9 @@ const List = styled.ul`
     max-height: 35px;
     &>path{
       stroke: var(--color-footer-white);
-      transition: stroke 0.3s;
     }
     &>g{
       fill: var(--color-footer-white);
-      transition: fill 0.3s;
     }
     @media (hover){
       &:hover>g{
@@ -68,10 +65,13 @@ const Navigation = styled.nav`
   }
 `;
 const GitLabListItem = styled.li`
-  & path{
+  & path {
     stroke-width: 0;
     fill: var(--color-footer-white);
-    transition: stroke 0.3s;
+  }
+    
+  &:hover path {
+    fill: var(--color-coral);
   }
 `;
 
@@ -86,14 +86,13 @@ function Footer () {
           <AppLink type="navlink" to="/portfolio">Портфолио</AppLink>
           <AppLink type="navlink" to="/contacts">Контакты</AppLink>
         </Navigation>
-        <Title>Контакты</Title>
+        <Title>Полезные ссылки</Title>
         <List>
           <li><a target="_blank" rel="noreferrer" href="https://t.me/maksim4k1"><TelegramIcon/></a></li>
-          <li><a target="_blank" rel="noreferrer" href="https://wa.me/+79836091358"><WhatsappIcon/></a></li>
           <GitLabListItem><a target="_blank" rel="noreferrer" href="https://gitlab.com/maksim4k1"><GitlabIcon/></a></GitLabListItem>
           <li><a target="_blank" rel="noreferrer" href="https://github.com/maksim4k1"><GithubIcon/></a></li>
         </List>
-        <Content>Вы можете связаться со мной<br/>или посмотреть на мои работы<br/>по ссылкам выше</Content>
+        <Content>Вы можете связаться со мной<br/>или посмотреть на мои работы</Content>
       </Section>
     </FooterElement>
   );

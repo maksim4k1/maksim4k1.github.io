@@ -3,7 +3,8 @@ import Section from "./UI/Section";
 import Title from "../components/UI/Title";
 import styled from "styled-components";
 import { gap } from "../styles/mixins";
-import now_age from "../utils/now_age";
+import AppLink from "./UI/AppLink";
+import Skills from "./Skills";
 
 const Content = styled.div`
   display: flex;
@@ -11,20 +12,64 @@ const Content = styled.div`
   ${gap("30px")}
   font-weight: 500;
 `;
+const Date = styled.div`
+  margin-bottom: -20px;
+  font-weight: 600;
+`;
 
 function About () {
   return(
-    <Section>
-      <Title>Обо мне</Title>
-      <Content>
-        <p>Здравствуйте, меня зовут <strong>Баженов Максим</strong> и <strong>мне {now_age()} лет</strong>.</p>
-        <p>Я обучаюсь в Томском государственном университете систем управления и радиоэлектроники (<strong>ТУСУР</strong>) по направлению <strong>Программная инженерия</strong>.</p>
-        <p>В свободное время <strong>занимаюсь программированием</strong>, в частности <strong>Front-end</strong> разработкой, так как во Фронте присутствуют все интересующие меня направления - <strong>IT</strong> и <strong>дизайн</strong>.</p>
-        <p>Я увлекаюсь программированием с лета 2020 года, и за это время успел попробовать несколько направлений: <strong>разработка игр</strong>, <strong>Back-end</strong> разработка, разработка на <strong>Python</strong> и <strong>Front-end</strong> разработка. Во время обучения я изучил такие языки программирования как <strong>JavaScript</strong>, <strong>Python</strong>, <strong>HTML</strong> и <strong>CSS</strong>, а также фреймворк <strong>React JS</strong>.</p>
-        <p>Помимо продвижения в разработке я также овладел базовыми знаниями в <strong>дизайне</strong> и научился работать с приложениями <strong>Figma</strong> и <strong>Adobe Photoshop</strong>. Параллельно с этим я также приобрел некоторые знания в <strong>3D моделировании</strong> в программах <strong>Blender</strong> и <strong>3DS MAX</strong>.</p>
-        <p>В <strong>декабре 2021</strong> с отличием закончил курс <strong>Front-end разработки</strong>, на котором создал много учебных проектов.</p>
-      </Content>
-    </Section>
+    <>
+      <Section>
+        <Title>Опыт работы</Title>
+        <Content>
+          <Date><strong>—</strong> июль 2024 - октябрь 2024</Date>
+          <p>Проходил стажировку в Яндексе, где разрабатывал Frontend часть для сервиса Яндекс.ОФД, в частности верстал мобильную версию сервиса, настраивал PWA, обновлял библиотеки, фиксил баги, а также создавал новые и улучшал имеющиеся функции.</p>
+        </Content>
+      </Section>
+      <Section>
+        <Title>Образование, курсы</Title>
+        <Content>
+          <Date><strong>—</strong> 2022 - 2026</Date>
+          <p>
+            Томский государственный университет систем управления и радиоэлектроники (ТУСУР), Томск. Факультет систем управления, Программное обеспечение вычислительной техники и автоматизированных систем.
+          </p>
+        </Content>
+        <Content>
+          <Date><strong>—</strong> 2021</Date>
+          <p>Front-end разработка на React, IT-Academy</p>
+        </Content>
+        <Content>
+          <Date><strong>—</strong> 2024</Date>
+          <p>Front-end разработка, ИТ-Академия, ТУСУР</p>
+        </Content>
+      </Section>
+      <Skills/>
+      <Section>
+        <Title>О себе</Title>
+        <Content>
+          <p>
+            <strong>—</strong> В данный момент участвую в разработке веб-приложения для сопровождения психотерапии и самостоятельной проработки психологических проблем пользователя "Одеяло", которое содержит: психологические тесты, статьи, упражнения<br/>
+            <br/><br/>
+            Роль в проекте: Lead Frontend-разработчик<br/>
+            Технологии: Next.js, React, TypeScript, Redux-toolkit, RTK Query, SCSS-modules, Formik<br/>
+            <br/>
+            1. Реализовал аутентификацию и авторизацию🔐<br/>
+            2. Связал приложение с API, используя RTK Query🔗<br/>
+            3. Создал прослойку BFF между клиентом и сервером🧑‍💻🔄<br/>
+            4. Добавил адаптивную верстку📱💻<br/>
+            5. Использовал Docker, docker-compose для развертывания проекта🐳<br/>
+            6. Настроил CI/CD в проекте с помощью GitLab🚀🔧<br/>
+            7. Запустил приложение на облачном сервере, настроил домен, SSL-сертификаты и их автоматическое обновление☁️🌐🔒<br/>
+            <br/>
+            Сайт: <AppLink href={"https://психолог.демо-стенд.рф/"}>https://психолог.демо-стенд.рф/</AppLink><br/>
+            GitLab: <AppLink href={"https://gitlab.com/maksim4k1/odeyalo"}>https://gitlab.com/maksim4k1/odeyalo</AppLink>
+          </p>
+          <p><strong>—</strong> В марте 2024 года участвовал в хакатоне “Молодая IT-Магистраль”, где с командой разработал веб-сервис, позволяющий создавать формы для организации опросов пользователей, который стал лучшим проектом по итогам хакатона.</p>
+          <p><strong>—</strong> Ответственен и организован. Быстро учусь и адаптируюсь под новые условия. Хочу продвигаться и развивать свои навыки в направлении Frontend-разработки и проектирования программного обеспечения.</p>
+        </Content>
+      </Section>
+    </>
   );
 }
 

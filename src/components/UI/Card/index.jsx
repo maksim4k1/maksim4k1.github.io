@@ -9,7 +9,8 @@ const CardElement = styled.div`
   display: flex;
   flex-flow: column;
   margin: 0 auto 0 0;
-  ${gap("10px")}
+  ${gap("10px")};
+    
   @media screen and (min-width: 650px){
     &.full-width{
       width: 80%;
@@ -17,7 +18,7 @@ const CardElement = styled.div`
       grid-column-start: 1;
       grid-column-end: 3;
       &>div:first-child>img{
-        height: 280px;
+        height: 320px;
       }
       &>h4{
         text-align: center;

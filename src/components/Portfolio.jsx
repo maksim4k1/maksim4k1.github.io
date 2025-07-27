@@ -22,13 +22,17 @@ function Portfolio ({projects, projectsWithApi, quizProject, multiTaskerProject,
   return(
     <Section>
       <Title>Портфолио</Title>
+      <Content>
+        <p>GitLab web-приложения «Одеяло»: <AppLink href="https://gitlab.com/maksim4k1/odeyalo" target="_blank" rel="noreferrer">https://gitlab.com/maksim4k1/odeyalo</AppLink>.</p>
+        <p>GitLab конфигурации Nginx с настройкой SSL для проекта «Одеяло»: <AppLink href="https://gitlab.com/maksim4k1/odeyalo-gateway" target="_blank" rel="noreferrer">https://gitlab.com/maksim4k1/odeyalo-gateway</AppLink>.</p>
+      </Content>
       <List list={obsudimProject}/>
-      <List list={projects}/>
       <Content>
         <p>Для корректной работы следующего приложения требуется скачать локальный API по ссылке: <AppLink href="https://github.com/maksim4k1/multi-tasker-api" target="_blank" rel="noreferrer">https://github.com/maksim4k1/multi-tasker-api</AppLink>.</p>
         <p>Инструкция по запуску сервера находится по <AppLink href="https://github.com/maksim4k1/multi-tasker-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>
       </Content>
       <List list={multiTaskerProject}/>
+      <List list={projects}/>
       <Content>
         <p>Для корректной работы следующих приложений требуется скачать локальный API по ссылке: <AppLink href="https://github.com/an4morph/academy-fake-api" target="_blank" rel="noreferrer">https://github.com/an4morph/academy-fake-api</AppLink>.</p>
         <p>Инструкция по запуску сервера находится по <AppLink href="https://github.com/an4morph/academy-fake-api/blob/main/README.md" target="_blank" rel="noreferrer">данной ссылке</AppLink>.</p>

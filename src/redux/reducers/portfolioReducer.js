@@ -13,14 +13,14 @@ import sweetbakery from "../../assets/webp/SweetBakery.webp";
 import quizApp from "../../assets/webp/quiz-app.webp";
 import educationApp from "../../assets/webp/EducationApp.webp";
 import multiTaskerApp from "../../assets/webp/MultiTasker.webp";
-import obsudimApp from "../../assets/webp/Obsudim.webp";
+import odeyaloApp from "../../assets/webp/Odeyalo.webp";
 
 const initialState = {
   obsudimProject: [
     {
       id: 0,
-      name: "Обсудим - Программная система для сопровождения психотерапии и самостоятельной проработки психологических проблем.",
-      image: `${obsudimApp}`,
+      name: "Одеяло - Программная система для сопровождения психотерапии и самостоятельной проработки психологических проблем.",
+      image: `${odeyaloApp}`,
       link: "https://психолог.демо-стенд.рф",
     },
   ],

@@ -90,7 +90,7 @@ function Home ({image}) {
         <Title>Максим<br/>Баженов</Title>
         <ShortInfo>
           <p>Я начинающий<br/><strong>Front-end</strong> разработчик</p>
-          <p>Мне <strong>{now_age()}</strong> лет</p>
+          <p>Мне {now_age()}</p>
           <p>И я проживаю в <strong>Томске</strong></p>
         </ShortInfo>
         {
